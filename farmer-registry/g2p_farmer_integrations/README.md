@@ -1,1 +1,0 @@
-# g2p_farmer_integrations
