@@ -67,25 +67,11 @@
                                     </select>
                                 </div>
 
-                                <div class="additional_filter header_filter">
-                                    <select
-                                        id="zone_selection_group"
-                                        class="form-select"
-                                        name="zone"
-                                        required="required"
-                                    >
-                                        <option value=" ">Zone</option>
-                                        <t t-foreach="zone" t-as="option">
-                                            <option t-att-value="option.id">
-                                                <t t-esc="option.name" />
-                                            </option>
-                                        </t>
-                                    </select>
-                                </div>
+                            
 
                                 <div class="additional_filter header_filter">
-                                    <select id="woreda_selection_group" class="form-select" name="woreda">
-                                        <option value=" ">Woreda</option>
+                                    <select id="district_selection_group" class="form-select" name="district">
+                                        <option value=" ">District</option>
                                         <t t-foreach="wereda" t-as="option">
                                             <option t-att-value="option.id">
                                                 <t t-esc="option.name" />
@@ -96,9 +82,9 @@
 
 
                                 <div class="additional_filter header_filter">
-                                    <select id="kebele_selection_group" class="form-select" name="kebele">
-                                        <option value=" ">Kebele</option>
-                                        <t t-foreach="kebele" t-as="option">
+                                    <select id="block_selection_group" class="form-select" name="block">
+                                        <option value=" ">Block</option>
+                                        <t t-foreach="block" t-as="option">
                                             <option t-att-value="option.id">
                                                 <t t-esc="option.name" />
                                             </option>
@@ -175,13 +161,10 @@
                                         <th class="fixed-width-column-group">Region <i
                                                 class="fas fa-sort fa-3x"
                                             /></th>
-                                        <th class="fixed-width-column-group">Zone <i
+                                        <th class="fixed-width-column-group">District <i
                                                 class="fas fa-sort fa-3x"
                                             /></th>
-                                        <th class="fixed-width-column-group">Woreda <i
-                                                class="fas fa-sort fa-3x"
-                                            /></th>
-                                        <th class="fixed-width-column-group">Kebele <i
+                                        <th class="fixed-width-column-group">Block <i
                                                 class="fas fa-sort fa-2xl"
                                             /></th>
                                         <th
@@ -212,16 +195,12 @@
                                             </td>
 
 
-                                            <td data-label="Zone" class="fixed-width-column-group tr_grid_item5">
-                                                <t t-out="group['zone']['name']" />
+                                            <td data-label="District" class="fixed-width-column-group tr_grid_item6">
+                                                <t t-out="group['district']['name']" />
                                             </td>
 
-                                            <td data-label="Woreda" class="fixed-width-column-group tr_grid_item6">
-                                                <t t-out="group['woreda']['name']" />
-                                            </td>
-
-                                            <td data-label="Kebele" class="fixed-width-column-group tr_grid_item7">
-                                                <t t-out="group['kebele']['name']" />
+                                            <td data-label="Block" class="fixed-width-column-group tr_grid_item7">
+                                                <t t-out="group['block']['name']" />
                                             </td>
 
                                             <td data-label="Last Update" class="fixed-width-column tr_grid_item8">
@@ -305,25 +284,11 @@
                                                     </select>
                             </div>
 
-                            <div class="additional_filter modal_filter mf2 ">
-                                <select
-                                    id="zone_selection_group_modal"
-                                    class="form-select"
-                                    name="zone"
-                                    required="required"
-                                >
-                                    <option value=" ">Zone</option>
-                                    <t t-foreach="zone" t-as="option">
-                                        <option t-att-value="option.id">
-                                            <t t-esc="option.name" />
-                                        </option>
-                                    </t>
-                                </select>
-                            </div>
+                           
                             
                             <div class="additional_filter modal_filter mf3">
-                                <select id="woreda_selection_group_modal" class="form-select" name="woreda">
-                                    <option value=" ">Woreda</option>
+                                <select id="district_selection_group_modal" class="form-select" name="district">
+                                    <option value=" ">District</option>
                                     <t t-foreach="wereda" t-as="option">
                                         <option t-att-value="option.id">
                                             <t t-esc="option.name" />
@@ -334,9 +299,9 @@
 
 
                             <div class="additional_filter modal_filter mf4">
-                                <select id="kebele_selection_group_modal" class="form-select" name="kebele">
-                                    <option value=" ">Kebele</option>
-                                    <t t-foreach="kebele" t-as="option">
+                                <select id="block_selection_group_modal" class="form-select" name="block">
+                                    <option value=" ">Block</option>
+                                    <t t-foreach="block" t-as="option">
                                         <option t-att-value="option.id">
                                             <t t-esc="option.name" />
                                         </option>

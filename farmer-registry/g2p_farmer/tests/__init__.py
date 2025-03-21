@@ -1,8 +1,7 @@
 from . import (
     test_area_region,
-    test_area_zone,
-    test_area_woreda,
-    test_area_kebele,
+    test_area_district,
+    test_area_block,
     test_cooperative_union,
     test_primary_cooperatives,
     test_crop_info,

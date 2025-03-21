@@ -43,16 +43,21 @@ class Region(models.Model):
         domain = ["|", ("code", operator, name), ("name", operator, name)] + args
         return self.search(domain, limit=limit).name_get()
 
-
-class Zone(models.Model):
-    _name = "g2p.zone"
+class District(models.Model):
+    _name = "g2p.district"
 
     region = fields.Many2one("g2p.region", required=True)
     code = fields.Char(required=True, index=True)
-    name = fields.Char(required=True, string="Zone")
+    name = fields.Char(required=True, string="District")
+
+    @api.model
+    def name_search(self, name, args=None, operator="ilike", limit=100):
+        args = args or []
+        domain = ["|", ("code", operator, name), ("name", operator, name)] + args
+        return self.search(domain, limit=limit).name_get()
 
     @api.constrains("region")
-    def _check_zone(self):
+    def _check_district(self):
         for record in self:
             if not record.region:
                 error_message = _("Region should not empty.")
@@ -62,97 +67,51 @@ class Zone(models.Model):
     def _check_name(self):
         for record in self:
             if not record.name:
-                error_message = _("Zone name should not empty.")
+                error_message = _("District name should not empty.")
                 raise ValidationError(error_message)
 
     @api.constrains("code")
     def _check_code(self):
-        zones = self.search([])
+        districts = self.search([])
         for record in self:
             if not record.code:
-                error_message = _("Zone Code should not empty.")
+                error_message = _("District Code should not empty.")
                 raise ValidationError(error_message)
 
-        for zone in zones:
-            if self.code.lower() == zone.code.lower() and self.id != zone.id:
+        for district in districts:
+            if self.code.lower() == district.code.lower() and self.id != district.id:
                 raise ValidationError(_("The code must be unique!"))
 
-    @api.model
-    def name_search(self, name, args=None, operator="ilike", limit=100):
-        args = args or []
-        domain = ["|", ("code", operator, name), ("name", operator, name)] + args
-        return self.search(domain, limit=limit).name_get()
 
+class Block(models.Model):
+    _name = "g2p.block"
 
-class Woreda(models.Model):
-    _name = "g2p.woreda"
-
-    zone = fields.Many2one("g2p.zone", required=True)
+    district = fields.Many2one("g2p.district", required=True)
     code = fields.Char(required=True, index=True)
-    name = fields.Char(required=True, string="Woreda")
+    name = fields.Char(required=True, string="Block")
 
-    @api.model
-    def name_search(self, name, args=None, operator="ilike", limit=100):
-        args = args or []
-        domain = ["|", ("code", operator, name), ("name", operator, name)] + args
-        return self.search(domain, limit=limit).name_get()
-
-    @api.constrains("zone")
-    def _check_woreda(self):
+    @api.constrains("district")
+    def _check_district(self):
         for record in self:
-            if not record.zone:
-                error_message = _("Zone should not empty.")
+            if not record.district:
+                error_message = _("District should not empty.")
                 raise ValidationError(error_message)
 
     @api.constrains("name")
     def _check_name(self):
         for record in self:
             if not record.name:
-                error_message = _("Woreda name should not empty.")
+                error_message = _("block name should not empty.")
                 raise ValidationError(error_message)
 
     @api.constrains("code")
     def _check_code(self):
-        woredas = self.search([])
+        blocks = self.search([])
         for record in self:
             if not record.code:
-                error_message = _("Woreda Code should not empty.")
+                error_message = _("block Code should not empty.")
                 raise ValidationError(error_message)
 
-        for woreda in woredas:
-            if self.code.lower() == woreda.code.lower() and self.id != woreda.id:
-                raise ValidationError(_("The code must be unique!"))
-
-
-class Kebele(models.Model):
-    _name = "g2p.kebele"
-
-    woreda = fields.Many2one("g2p.woreda", required=True)
-    code = fields.Char(required=True, index=True)
-    name = fields.Char(required=True, string="Kebele")
-
-    @api.constrains("woreda")
-    def _check_woreda(self):
-        for record in self:
-            if not record.woreda:
-                error_message = _("Woreda should not empty.")
-                raise ValidationError(error_message)
-
-    @api.constrains("name")
-    def _check_name(self):
-        for record in self:
-            if not record.name:
-                error_message = _("kebele name should not empty.")
-                raise ValidationError(error_message)
-
-    @api.constrains("code")
-    def _check_code(self):
-        kebeles = self.search([])
-        for record in self:
-            if not record.code:
-                error_message = _("kebele Code should not empty.")
-                raise ValidationError(error_message)
-
-        for kebele in kebeles:
-            if self.code.lower() == kebele.code.lower() and self.id != kebele.id:
+        for block in blocks:
+            if self.code.lower() == block.code.lower() and self.id != block.id:
                 raise ValidationError(_("The code must be unique!"))

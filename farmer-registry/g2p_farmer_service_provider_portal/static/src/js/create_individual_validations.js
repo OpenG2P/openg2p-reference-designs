@@ -571,41 +571,29 @@ $(document).ready(function () {
     }
 
     const initialRegionId = $("#region_selection").val();
-    const initialZoneId = $("#zon_selection").val();
-    const initialWoredaId = $("#woreda_selection").val();
-    const initialKebeleId = $("#kebele_selection").val();
+    const initialDistrictId = $("#district_selection").val();
+    const initialBlockId = $("#block_selection").val();
 
-    console.log(`Here are the initial values ${initialRegionId}, ${initialZoneId}, ${initialWoredaId}`);
+    console.log(`Here are the initial values ${initialRegionId}, ${initialDistrictId}`);
 
     updateOptions(
-        "/update_zone_options",
+        "/update_district_options",
         {region_id: initialRegionId},
-        "zon_selection",
+        "district_selection",
         "Select",
         null,
         "region",
-        (initialValue = initialZoneId)
-    );
-
-
-    updateOptions(
-        "/update_woreda_options",
-        {zone_id: initialZoneId},
-        "woreda_selection",
-        "Select",
-        null,
-        "zone",
-        (initialValue = initialWoredaId)
+        (initialValue = initialDistrictId)
     );
     
     updateOptions(
-        "/update_kebele_options",
-        {woreda_id: initialWoredaId},
-        "kebele_selection",
+        "/update_block_options",
+        {district_id: initialDistrictId},
+        "block_selection",
         "Select",
         null,
-        "woreda",
-        (initialValue = initialKebeleId)
+        "district",
+        (initialValue = initialBlockId)
     );
 
     // Event listener for national ID selection change
@@ -643,22 +631,14 @@ $(document).ready(function () {
     $("#region_selection").on("change", function (event) {
         const regionId = this.value;
         var ev = event.originalEvent;
-        updateOptions("/update_zone_options", {region_id: regionId}, "zon_selection", "Select", ev, "region");
-        updateOptions("/update_woreda_options", {zone_id: 0}, "woreda_selection", "Select", ev, "region");
-        updateOptions("/update_kebele_options", {woreda_id: 0}, "kebele_selection", "Select", ev, "region");
+        updateOptions("/update_district_options", {region_id: regionId}, "district_selection", "Select", ev, "region");
+        updateOptions("/update_block_options", {district_id: 0}, "block_selection", "Select", ev, "region");
     });
 
-    $("#zon_selection").on("change", function (event) {
-        const zoneId = this.value;
+    $("#district_selection").on("change", function (event) {
+        const districtId = this.value;
         var ev = event.originalEvent;
-        updateOptions("/update_woreda_options", {zone_id: zoneId}, "woreda_selection", "Select", ev);
-        updateOptions("/update_kebele_options", {woreda_id: 0}, "kebele_selection", "Select", ev);
-    });
-
-    $("#woreda_selection").on("change", function (event) {
-        const woredaId = this.value;
-        var ev = event.originalEvent;
-        updateOptions("/update_kebele_options", {woreda_id: woredaId}, "kebele_selection", "Select", ev);
+        updateOptions("/update_block_options", {district_id: districtId}, "block_selection", "Select", ev);
     });
 
     // Trigger the change event on page load to handle the initial state

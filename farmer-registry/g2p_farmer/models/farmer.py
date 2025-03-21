@@ -7,42 +7,19 @@ from dateutil.relativedelta import relativedelta
 from odoo import _, api, fields, models
 from odoo.exceptions import ValidationError
 
-from .utils import eth_date
-
 _logger = logging.getLogger(__name__)
-
-ETHIOPIAN_MONTH_ORDER = {
-    "September": 1,
-    "October": 2,
-    "November": 3,
-    "December": 4,
-    "January": 5,
-    "February": 6,
-    "March": 7,
-    "April": 8,
-    "May": 9,
-    "June": 10,
-    "July": 11,
-    "August": 12,
-    "Pagume": 13,
-}
-
 
 class G2PFarmer(models.Model):
     _inherit = "res.partner"
     _order = "registration_date desc"
 
-    zone = fields.Many2one("g2p.zone", domain="[('region', '=', region)]")
-    woreda = fields.Many2one("g2p.woreda", domain="[('zone', '=', zone)]")
-    kebele = fields.Many2one("g2p.kebele", domain="[('woreda', '=', woreda)]")
+    district = fields.Many2one("g2p.district", domain="[('region', '=', region)]")
+    block = fields.Many2one("g2p.block", domain="[('district', '=', district)]")
     
     given_name = fields.Char(string="First Name(English)", translate=False)
     family_name = fields.Char(string="Father's Name(English)", translate=False)
     gf_name_eng = fields.Char(string="Grand Father's Name(English)", translate=False)
     
-    first_name_amh = fields.Char(string="First Name(Amharic)", translate=False)
-    family_name_amh = fields.Char(string="Father's Name(Amharic)", translate=False)
-    gf_name_amh = fields.Char(string="Grand Father's Name(Amharic)", translate=False)
     first_name_other = fields.Char(string="First Name", translate=False)
     family_name_other = fields.Char(string="Father's Name", translate=False)
     gf_name_other = fields.Char(string="Grand Father's Name", translate=False)
@@ -53,7 +30,6 @@ class G2PFarmer(models.Model):
     has_national_id = fields.Selection(
         string="Do you have a national id? ", selection=[("yes", "Yes"), ("no", "No")]
     )
-    birthdate_ec = fields.Char(string="Date Of Birth (EC)", help="YYYY-MM-DD")
     primary_Language = fields.Many2one("g2p.lang")
     is_farmer = fields.Selection(
         string="Are you a farmer? ", index=True, selection=[("yes", "Yes"), ("no", "No")]
@@ -209,18 +185,18 @@ class G2PFarmer(models.Model):
 
     # @api.onchange("region")
     # def _onchange_region(self):
-    #     self.zone = False
-    #     self.woreda = False
-    #     self.kebele = False
+    #     self.region = False
+    #     self.district = False
+    #     self.block = False
 
-    # @api.onchange("zone")
-    # def _onchange_zone(self):
-    #     self.woreda = False
-    #     self.kebele = False
+    # @api.onchange("region")
+    # def _onchange_region(self):
+    #     self.district = False
+    #     self.block = False
 
-    # @api.onchange("woreda")
-    # def _onchange_woreda(self):
-    #     self.kebele = False
+    # @api.onchange("district")
+    # def _onchange_district(self):
+    #     self.block = False
     
 
     @api.onchange("is_group", "family_name", "given_name", "gf_name_eng")
@@ -262,29 +238,6 @@ class G2PFarmer(models.Model):
             else:
                 record.land_ownership = False
 
-    @api.onchange("birthdate")
-    def _onchange_birthdate(self):
-        if self.birthdate:
-            bday = date(self.birthdate.year, self.birthdate.month, self.birthdate.day)
-            ethiopian_date_str = eth_date.to_ethiopian(bday.year, bday.month, bday.day)
-            self.birthdate_ec = eth_date.convert_tuple_to_string_with_separator(ethiopian_date_str)
-
-    @api.constrains("birthdate")
-    def _add_birthdate_ec(self):
-        if self.birthdate:
-            bday = date(self.birthdate.year, self.birthdate.month, self.birthdate.day)
-            ethiopian_date_str = eth_date.to_ethiopian(bday.year, bday.month, bday.day)
-            self.birthdate_ec = eth_date.convert_tuple_to_string_with_separator(ethiopian_date_str)
-
-    @api.onchange("birthdate_ec")
-    def _onchange_birthdate_ec(self):
-        if self.birthdate_ec:
-            eth_date.check_ethipian_date_str(self.birthdate_ec)
-            date_list = re.split("[-/,]", self.birthdate_ec)
-            gc_date = eth_date.to_gregorian(int(date_list[2]), int(date_list[1]), int(date_list[0]))
-            if gc_date > fields.date.today():
-                raise ValidationError(_("You can't select a date of birth greater than today"))
-            self.birthdate = gc_date
 
     @api.onchange("has_finance_access")
     def _onchange_has_finance_access(self):
@@ -345,7 +298,7 @@ class G2PFarmer(models.Model):
 
     def write(self, vals):
         result = super().write(vals)
-        if "zone" in vals or "woreda" in vals or "kebele" in vals or "hh_is_household_head" in vals:
+        if "region" in vals or "district" in vals or "block" in vals or "hh_is_household_head" in vals:
             if self.hh_is_household_head == "yes":
                 self._update_group_memberships()
         return result
@@ -359,9 +312,8 @@ class G2PFarmer(models.Model):
                         group.write(
                             {
                                 "region": record.region.id,
-                                "zone": record.zone.id,
-                                "woreda": record.woreda.id,
-                                "kebele": record.kebele.id,
+                                "district": record.district.id,
+                                "block": record.block.id,
                             }
                         )
 
@@ -373,8 +325,7 @@ class G2PFarmer(models.Model):
                             group_member.individual.write(
                                 {
                                     "region": record.region.id,
-                                    "zone": record.zone.id,
-                                    "woreda": record.woreda.id,
-                                    "kebele": record.kebele.id,
+                                    "district": record.district.id,
+                                    "block": record.block.id,
                                 }
                             )

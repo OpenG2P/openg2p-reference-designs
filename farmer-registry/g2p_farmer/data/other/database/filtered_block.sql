@@ -1,0 +1,13 @@
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290102') WHERE code = '29012101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290102') WHERE code = '29012201001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290104') WHERE code = '29014101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290105') WHERE code = '29015101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290106') WHERE code = '29016101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290109') WHERE code = '29018101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101001';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101002';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101003';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101004';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101005';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101006';
+UPDATE g2p_block SET district = (SELECT id FROM g2p_district WHERE code = 'IN290103') WHERE code = '29010101007';

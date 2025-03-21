@@ -5,8 +5,8 @@
         <field name="model">g2p.primary.commodity</field>
         <field name="arch" type="xml">
             <tree create="true" delete="true" edit="true" editable="bottom">
-                    <field name="name" />
-                    <field name="code" />
+                <field name="name" />
+                <field name="code" />
             </tree>
         </field>
     </record>
@@ -17,11 +17,11 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem
-        id="g2p_primary_coomodity_menu"
-        action="g2p_primary_commodity_action"
-        name="Primary Commodity"
-        sequence="620"
-        parent="g2p_registry_base.g2p_configuration_menu_root"
+    <menuitem 
+        id="g2p_primary_coomodity_menu" 
+        action="g2p_primary_commodity_action" 
+        name="Primary Commodity" 
+        sequence="620" 
+        parent="g2p_registry_base.g2p_configuration_menu_root" 
     />
 </odoo>

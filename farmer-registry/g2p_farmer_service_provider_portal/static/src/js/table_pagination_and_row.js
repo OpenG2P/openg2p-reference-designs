@@ -13,24 +13,20 @@ const searchClearText = document.getElementById("search-text-clear");
 // Const selectedOption = selectionRegion.options[selectionRegion.selectedIndex];
 // const selectedOptionText = selectedOption.textContent || selectedOption.innerText;
 const SelectionRegion = document.getElementById("region_selection");
-const SelectionZon = document.getElementById("zone_selection");
-const SelectionWoreda = document.getElementById("woreda_selection");
-const SelectionKebele = document.getElementById("kebele_selection");
+const SelectionDistrict = document.getElementById("district_selection");
+const SelectionBlock = document.getElementById("block_selection");
 
 const SelectionRegionGroup = document.getElementById("region_selection_group");
-const SelectionZonGroup = document.getElementById("zone_selection_group");
-const SelectionWoredaGroup = document.getElementById("woreda_selection_group");
-const SelectionKebeleGroup = document.getElementById("kebele_selection_group");
+const SelectionDistrictGroup = document.getElementById("district_selection_group");
+const SelectionBlockGroup = document.getElementById("block_selection_group");
 
 const SelectionRegionGroupModal = document.getElementById("region_selection_group_modal");
-const SelectionZonGroupModal = document.getElementById("zone_selection_group_modal");
-const SelectionWoredaGroupModal = document.getElementById("woreda_selection_group_modal");
-const SelectionKebeleGroupModal = document.getElementById("kebele_selection_group_modal");
+const SelectionDistrictGroupModal = document.getElementById("district_selection_group_modal");
+const SelectionBlockGroupModal = document.getElementById("block_selection_group_modal");
 
 const SelectionRegionModal = document.getElementById("region_selection_modal");
-const SelectionZonModal = document.getElementById("zone_selection_modal");
-const SelectionWoredaModal = document.getElementById("woreda_selection_modal");
-const SelectionKebeleModal = document.getElementById("kebele_selection_modal");
+const SelectionDistrictModal = document.getElementById("district_selection_modal");
+const SelectionBlockModal = document.getElementById("block_selection_modal");
 
 searchClearText.style.display = "none";
 
@@ -107,47 +103,7 @@ function applySelectionFilter(selectionValue, isGroup, modal = false) {
     });
 }
 
-function applySelectionFilterZone(isGroup, modal = false) {
-    filteredRows = allRows.filter((row) => {
-        var cellValue2 = null;
-        var text_i = null;
-
-        if (isGroup) {
-            cellValue2 = row.cells[4].innerText.trim().replace(/\s/g, "");
-
-            if (!modal) {
-                text_i = SelectionZonGroup.options[SelectionZonGroup.selectedIndex].text
-                    .trim()
-                    .replace(/\s/g, "");
-            }
-
-            if (modal) {
-                text_i = SelectionZonGroupModal.options[SelectionZonGroupModal.selectedIndex].text
-                    .trim()
-                    .replace(/\s/g, "");
-            }
-        } else {
-            cellValue2 = row.cells[3].innerText.trim().replace(/\s/g, "");
-
-            if (!modal) {
-                text_i = SelectionZon.options[SelectionZon.selectedIndex].text.trim().replace(/\s/g, "");
-            }
-
-            if (modal) {
-                text_i = SelectionZonModal.options[SelectionZonModal.selectedIndex].text
-                    .trim()
-                    .replace(/\s/g, "");
-            }
-        }
-
-        // Const cellValue2 = row.cells[3].value
-        // return cellValue2 === selectionValue;
-
-        return cellValue2 === text_i || text_i === "Zone";
-    });
-}
-
-function applySelectionFilterWoreda(selectionValue, isGroup, modal = false) {
+function applySelectionFilterDistrict(selectionValue, isGroup, modal = false) {
     filteredRows = allRows.filter((row) => {
         // Const cellValue2 = row.cells[4].innerText.trim().replace(/\s/g, "");
         // const selectedText = selectionValue.options[selectionValue.selectedIndex].text;
@@ -158,12 +114,12 @@ function applySelectionFilterWoreda(selectionValue, isGroup, modal = false) {
             cellValue2 = row.cells[5].innerText.trim().replace(/\s/g, "");
 
             if (!modal) {
-                text_i = SelectionWoredaGroup.options[SelectionWoredaGroup.selectedIndex].text
+                text_i = SelectionDistrictGroup.options[SelectionDistrictGroup.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
             if (modal) {
-                text_i = SelectionWoredaGroupModal.options[SelectionWoredaGroupModal.selectedIndex].text
+                text_i = SelectionDistrictGroupModal.options[SelectionDistrictGroupModal.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
@@ -171,23 +127,23 @@ function applySelectionFilterWoreda(selectionValue, isGroup, modal = false) {
             cellValue2 = row.cells[4].innerText.trim().replace(/\s/g, "");
 
             if (!modal) {
-                text_i = SelectionWoreda.options[SelectionWoreda.selectedIndex].text
+                text_i = SelectionDistrict.options[SelectionDistrict.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
 
             if (modal) {
-                text_i = SelectionWoredaModal.options[SelectionWoredaModal.selectedIndex].text
+                text_i = SelectionDistrictModal.options[SelectionDistrictModal.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
         }
 
-        return cellValue2 === text_i || text_i === "Woreda";
+        return cellValue2 === text_i || text_i === "District";
     });
 }
 
-function applySelectionFilterKebele(selectionValue, isGroup, modal = false) {
+function applySelectionFilterBlock(selectionValue, isGroup, modal = false) {
     filteredRows = allRows.filter((row) => {
         var cellValue2 = null;
         var text_i = null;
@@ -195,13 +151,13 @@ function applySelectionFilterKebele(selectionValue, isGroup, modal = false) {
             cellValue2 = row.cells[6].innerText.trim().replace(/\s/g, "");
 
             if (!modal) {
-                text_i = SelectionKebeleGroup.options[SelectionKebeleGroup.selectedIndex].text
+                text_i = SelectionBlockGroup.options[SelectionBlockGroup.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
 
             if (modal) {
-                text_i = SelectionKebeleGroupModal.options[SelectionKebeleGroupModal.selectedIndex].text
+                text_i = SelectionBlockGroupModal.options[SelectionBlockGroupModal.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
@@ -209,19 +165,19 @@ function applySelectionFilterKebele(selectionValue, isGroup, modal = false) {
             cellValue2 = row.cells[5].innerText.trim().replace(/\s/g, "");
 
             if (!modal) {
-                text_i = SelectionKebele.options[SelectionKebele.selectedIndex].text
+                text_i = SelectionBlock.options[SelectionBlock.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
 
             if (modal) {
-                text_i = SelectionKebeleModal.options[SelectionKebeleModal.selectedIndex].text
+                text_i = SelectionBlockModal.options[SelectionBlockModal.selectedIndex].text
                     .trim()
                     .replace(/\s/g, "");
             }
         }
 
-        return cellValue2 === text_i || text_i === "Kebele";
+        return cellValue2 === text_i || text_i === "Block";
     });
 }
 
@@ -428,22 +384,20 @@ function getSelectionValues(isGroup, modal = false) {
     if (!modal) {
         return {
             SelectionRegionValue: isGroup ? SelectionRegionGroup : SelectionRegion,
-            SelectionZonValue: isGroup ? SelectionZonGroup?.value : SelectionZon?.value,
-            SelectionWoredaValue: isGroup ? SelectionWoredaGroup?.value : SelectionWoreda?.value,
-            SelectionKebeleValue: isGroup ? SelectionKebeleGroup?.value : SelectionKebele?.value,
+            SelectionDistrictValue: isGroup ? SelectionDistrictGroup?.value : SelectionDistrict?.value,
+            SelectionBlockValue: isGroup ? SelectionBlockGroup?.value : SelectionBlock?.value,
         };
     } else {
         return {
             SelectionRegionValue: isGroup ? SelectionRegionGroupModal : SelectionRegionModal,
-            SelectionZonValue: isGroup ? SelectionZonGroupModal?.value : SelectionZonModal?.value,
-            SelectionWoredaValue: isGroup ? SelectionWoredaGroupModal?.value : SelectionWoredaModal?.value,
-            SelectionKebeleValue: isGroup ? SelectionKebeleGroupModal?.value : SelectionKebeleModal?.value,
+            SelectionDistrictValue: isGroup ? SelectionDistrictGroupModal?.value : SelectionDistrictModal?.value,
+            SelectionBlockValue: isGroup ? SelectionBlockGroupModal?.value : SelectionBlockModal?.value,
         };
     }
 }
 
 function handleSearch(isGroup = true, modal = false) {
-    var {SelectionRegionValue, SelectionZonValue, SelectionWoredaValue, SelectionKebeleValue} =
+    var {SelectionRegionValue, SelectionDistrictValue, SelectionBlockValue} =
         getSelectionValues(isGroup, modal);
     var searchValue = searchInputText.value.trim().toLowerCase();
     filteredRows = allRows;
@@ -452,14 +406,11 @@ function handleSearch(isGroup = true, modal = false) {
         if (SelectionRegionValue?.value.trim()) {
             applySelectionFilter(SelectionRegionValue, isGroup, (modal = modal));
         }
-        if (SelectionZonValue?.trim()) {
-            applySelectionFilterZone(isGroup, (modal = modal));
+        if (SelectionDistrictValue?.trim()) {
+            applySelectionFilterDistrict(SelectionDistrictValue, isGroup, (modal = modal));
         }
-        if (SelectionWoredaValue?.trim()) {
-            applySelectionFilterWoreda(SelectionWoredaValue, isGroup, (modal = modal));
-        }
-        if (SelectionKebeleValue?.trim()) {
-            applySelectionFilterKebele(SelectionKebeleValue, isGroup, (modal = modal));
+        if (SelectionBlockValue?.trim()) {
+            applySelectionFilterBlock(SelectionBlockValue, isGroup, (modal = modal));
         }
         if (searchValue) {
             applySearchFilter(searchValue, isGroup);
@@ -469,9 +420,8 @@ function handleSearch(isGroup = true, modal = false) {
     if (
         searchValue ||
         SelectionRegionValue?.value.trim() ||
-        SelectionZonValue?.trim() ||
-        SelectionWoredaValue?.trim() ||
-        SelectionKebeleValue?.trim()
+        SelectionDistrictValue?.trim() ||
+        SelectionBlockValue?.trim()
     ) {
         applyFilters();
         currentPage = 1;
@@ -491,9 +441,8 @@ SelectionRegion?.addEventListener("input", function () {
     const regionId = this.value;
     // Use Promise.all to wait for all updateOptions calls to complete
     Promise.all([
-        updateOptions("/update_zone_options", {region_id: regionId}, "zone_selection", "Zone"),
-        updateOptions("/update_woreda_options", {zone_id: null}, "woreda_selection", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection", "Kebele"),
+        updateOptions("/update_district_options", {region_id: regionId}, "district_selection", "District"),
+        updateOptions("/update_block_options", {district_id: null}, "block_selection", "Block"),
     ])
         .then(() => {
             handleSearch(false);
@@ -508,9 +457,8 @@ SelectionRegionGroup?.addEventListener("input", function () {
     console.log("before region group call");
 
     Promise.all([
-        updateOptions("/update_zone_options", {region_id: regionId}, "zone_selection_group", "Zone"),
-        updateOptions("/update_woreda_options", {zone_id: null}, "woreda_selection_group", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_group", "Kebele"),
+        updateOptions("/update_district_options", {region_id: regionId}, "district_selection_group", "District"),
+        updateOptions("/update_block_options", {district_id: null}, "block_selection_group", "Block"),
     ])
         .then(() => {
             handleSearch(true);
@@ -525,9 +473,8 @@ SelectionRegionGroupModal?.addEventListener("input", function () {
     console.log("before region group call");
 
     Promise.all([
-        updateOptions("/update_zone_options", {region_id: regionId}, "zone_selection_group_modal", "Zone"),
-        updateOptions("/update_woreda_options", {zone_id: null}, "woreda_selection_group_modal", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_group_modal", "Kebele"),
+        updateOptions("/update_district_options", {region_id: regionId}, "district_selection_group_modal", "District"),
+        updateOptions("/update_block_options", {district_id: null}, "block_selection_group_modal", "Block"),
     ])
         .then(() => {
             handleSearch(true, (modal = true));
@@ -541,9 +488,8 @@ SelectionRegionModal?.addEventListener("input", function () {
     const regionId = this.value;
 
     Promise.all([
-        updateOptions("/update_zone_options", {region_id: regionId}, "zone_selection_modal", "Zone"),
-        updateOptions("/update_woreda_options", {zone_id: null}, "woreda_selection_modal", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_modal", "Kebele"),
+        updateOptions("/update_district_options", {region_id: regionId}, "district_selection_modal", "District"),
+        updateOptions("/update_block_options", {district_id: null}, "block_selection_modal", "Block"),
     ])
         .then(() => {
             handleSearch(false, (modal = true));
@@ -553,11 +499,10 @@ SelectionRegionModal?.addEventListener("input", function () {
         });
 });
 
-SelectionZon?.addEventListener("input", function () {
-    const zoneId = this.value;
+SelectionDistrict?.addEventListener("input", function () {
+    const districtId = this.value;
     Promise.all([
-        updateOptions("/update_woreda_options", {zone_id: zoneId}, "woreda_selection", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection", "Kebele"),
+        updateOptions("/update_block_options", {district_id: districtId}, "block_selection", "Block"),
     ])
         .then(() => {
             handleSearch(false);
@@ -567,11 +512,10 @@ SelectionZon?.addEventListener("input", function () {
         });
 });
 
-SelectionZonGroup?.addEventListener("input", function () {
-    const zoneId = this.value;
+SelectionDistrictGroup?.addEventListener("input", function () {
+    const districtId = this.value;
     Promise.all([
-        updateOptions("/update_woreda_options", {zone_id: zoneId}, "woreda_selection_group", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_group", "Kebele"),
+        updateOptions("/update_block_options", {district_id: districtId}, "block_selection_group", "Block"),
     ])
         .then(() => {
             handleSearch(true);
@@ -581,68 +525,14 @@ SelectionZonGroup?.addEventListener("input", function () {
         });
 });
 
-SelectionZonGroupModal?.addEventListener("input", function () {
-    const zoneId = this.value;
-    Promise.all([
-        updateOptions("/update_woreda_options", {zone_id: zoneId}, "woreda_selection_group_modal", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_group_modal", "Kebele"),
-    ])
-        .then(() => {
-            handleSearch(true, (modal = true));
-        })
-        .catch((error) => {
-            console.error("Error in one of the updateOptions calls:", error);
-        });
-});
-
-SelectionZonModal?.addEventListener("input", function () {
-    const zoneId = this.value;
-    Promise.all([
-        updateOptions("/update_woreda_options", {zone_id: zoneId}, "woreda_selection_modal", "Woreda"),
-        updateOptions("/update_kebele_options", {woreda_id: null}, "kebele_selection_modal", "Kebele"),
-    ])
-        .then(() => {
-            handleSearch(false, (modal = true));
-        })
-        .catch((error) => {
-            console.error("Error in one of the updateOptions calls:", error);
-        });
-});
-
-SelectionWoreda?.addEventListener("input", function () {
-    const woredaId = this.value;
-    Promise.all([
-        updateOptions("/update_kebele_options", {woreda_id: woredaId}, "kebele_selection", "Kebele"),
-    ])
-        .then(() => {
-            handleSearch(false);
-        })
-        .catch((error) => {
-            console.error("Error in one of the updateOptions calls:", error);
-        });
-});
-
-SelectionWoredaGroup?.addEventListener("input", function () {
-    const woredaId = this.value;
-    Promise.all([
-        updateOptions("/update_kebele_options", {woreda_id: woredaId}, "kebele_selection_group", "Kebele"),
-    ])
-        .then(() => {
-            handleSearch(true);
-        })
-        .catch((error) => {
-            console.error("Error in one of the updateOptions calls:", error);
-        });
-});
-
-SelectionWoredaGroupModal?.addEventListener("input", function () {
-    const woredaId = this.value;
+SelectionDistrictGroupModal?.addEventListener("input", function () {
+    const districtId = this.value;
     Promise.all([
         updateOptions(
-            "/update_kebele_options",
-            {woreda_id: woredaId},
-            "kebele_selection_group_modal",
-            "Kebele"
+            "/update_block_options",
+            {district_id: districtId},
+            "block_selection_group_modal",
+            "Block"
         ),
     ])
         .then(() => {
@@ -653,10 +543,10 @@ SelectionWoredaGroupModal?.addEventListener("input", function () {
         });
 });
 
-SelectionWoredaModal?.addEventListener("input", function () {
-    const woredaId = this.value;
+SelectionDistrictModal?.addEventListener("input", function () {
+    const districtId = this.value;
     Promise.all([
-        updateOptions("/update_kebele_options", {woreda_id: woredaId}, "kebele_selection_modal", "Kebele"),
+        updateOptions("/update_block_options", {district_id: districtId}, "block_selection_modal", "Block"),
     ])
         .then(() => {
             handleSearch(false, (modal = true));
@@ -666,20 +556,20 @@ SelectionWoredaModal?.addEventListener("input", function () {
         });
 });
 
-SelectionKebele?.addEventListener("input", function () {
+SelectionBlock?.addEventListener("input", function () {
     handleSearch(false);
 });
-SelectionKebeleGroup?.addEventListener("input", function () {
+SelectionBlockGroup?.addEventListener("input", function () {
     handleSearch(true);
 });
-SelectionKebeleGroupModal?.addEventListener("input", function () {
+SelectionBlockGroupModal?.addEventListener("input", function () {
     handleSearch(true, (modal = true));
 });
-SelectionKebeleModal?.addEventListener("input", function () {
+SelectionBlockModal?.addEventListener("input", function () {
     handleSearch(false, (modal = true));
 });
 
-// SelectionKebeleGroupModal?.addEventListener("change", handleSearch(true, modal=true));
+// SelectionBlockGroupModal?.addEventListener("change", handleSearch(true, modal=true));
 
 searchClearText.addEventListener("click", function () {
     searchInputText.value = "";

@@ -222,28 +222,27 @@ $(document).on("click", "#member_submit", async function () {
     var group = $("input[name='group_id']").val();
 
     var region = document.getElementById("region_selection").value;
-    var zone = document.getElementById("zon_selection").value;
 
-    var woreda = document.getElementById("woreda_selection").value;
+    var district = document.getElementById("district_selection").value;
 
-    var kebele = document.getElementById("kebele_selection").value;
+    var block = document.getElementById("block_selection").value;
 
-    var other_woreda = "";
-    var other_kebele = "";
+    var other_district = "";
+    var other_block = "";
 
-    var woredaText = $("#woreda_selection option:selected").text().trim().toLowerCase();
+    var districtText = $("#district_selection option:selected").text().trim().toLowerCase();
 
-    var kebeleText = $("#kebele_selection option:selected").text().trim().toLowerCase();
+    var blockText = $("#block_selection option:selected").text().trim().toLowerCase();
 
     // Check for "other" or "others" in the text of primary_coop and coop_union
-    if (woredaText === "other" || woredaText === "others") {
-        other_woreda = $("#other_woreda").val();
-        additional_info.Woreda = other_woreda;
+    if (districtText === "other" || districtText === "others") {
+        other_district = $("#other_district").val();
+        additional_info.District = other_district;
     }
 
-    if (kebeleText === "other" || kebeleText === "others") {
-        other_kebele = $("#other_kebele").val();
-        additional_info.Kebele = other_kebele;
+    if (blockText === "other" || blockText === "others") {
+        other_block = $("#other_block").val();
+        additional_info.Block = other_block;
     }
 
     var isHouseholdHead = document.getElementById("hh_is_household_head_id").value;
@@ -265,9 +264,6 @@ $(document).on("click", "#member_submit", async function () {
     var firstName = $("#farmerDetailModal #given_name").val();
     var middleName = $("#farmerDetailModal #family_name").val();
     var lastName = $("#farmerDetailModal #gf_name_eng").val();
-    var firstNameAmh = $("#farmerDetailModal #first_name_amh").val();
-    var familyNameAmh = $("#farmerDetailModal #family_name_amh").val();
-    var gFNameAmh = $("#farmerDetailModal #gf_name_amh").val();
     var firstNameOther = $("#farmerDetailModal #first_name_other").val();
     var familyNameOther = $("#farmerDetailModal #family_name_other").val();
     var lastNameOther = $("#farmerDetailModal #gf_name_other").val();
@@ -453,9 +449,8 @@ $(document).on("click", "#member_submit", async function () {
             additional_info: JSON.stringify(additional_info),
             group_id: group,
             region: region,
-            zone: zone,
-            woreda: woreda,
-            kebele: kebele,
+            district: district,
+            block: block,
             isHouseholdHead: isHouseholdHead,
             hasNationalId: hasNationalId,
             selectedId: selectedId,
@@ -463,9 +458,6 @@ $(document).on("click", "#member_submit", async function () {
             given_name: firstName,
             family_name: middleName,
             gf_name_eng: lastName,
-            firstNameAmh: firstNameAmh,
-            familyNameAmh: familyNameAmh,
-            gFNameAmh: gFNameAmh,
             firstNameOther: firstNameOther,
             familyNameOther: familyNameOther,
             lastNameOther: lastNameOther,
@@ -775,13 +767,13 @@ document.addEventListener("DOMContentLoaded", function () {
     checkOthersOption("name_of_primary_coop", "otherPrimaryCoopField");
     checkOthersOption("name_of_coop_union", "otherCoopUnionField");
     checkOthersOption("incomeTypeSelect", "otherIncomeField");
-    checkOthersOption("woreda_selection", "otherWoredaField");
-    checkOthersOption("kebele_selection", "otherKebeleField");
+    checkOthersOption("district_selection", "otherDistrictField");
+    checkOthersOption("block_selection", "otherBlockField");
 });
 
 // Modal other fields
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to handle the display of the 'Other' field for Woreda and Kebele
+    // Function to handle the display of the 'Other' field for District and Block
 
 
     function handleOtherFields(selectElementId, otherFieldId) {
@@ -810,12 +802,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Event listener for each select element change
-    document.getElementById("woreda_selection").addEventListener("change", function () {
-        handleOtherFields("woreda_selection", "otherModalWoredaField");
+    document.getElementById("district_selection").addEventListener("change", function () {
+        handleOtherFields("district_selection", "otherModalDistrictField");
     });
 
-    document.getElementById("kebele_selection").addEventListener("change", function () {
-        handleOtherFields("kebele_selection", "otherModalKebeleField");
+    document.getElementById("block_selection").addEventListener("change", function () {
+        handleOtherFields("block_selection", "otherModalBlockField");
     });
 
     document.getElementById("hh_income_type").addEventListener("change", function () {
@@ -830,8 +822,8 @@ document.addEventListener("DOMContentLoaded", function () {
         handleOtherFields("name_of_coop_union", "otherModalCoopUnionField");
     });
 
-    handleOtherFields("woreda_selection", "otherModalWoredaField");
-    handleOtherFields("kebele_selection", "otherModalKebeleField");
+    handleOtherFields("district_selection", "otherModalDistrictField");
+    handleOtherFields("block_selection", "otherModalBlockField");
 
     // Initial check when the modal is shown
     $("#farmerDetailModal").on("shown.bs.modal", function () {

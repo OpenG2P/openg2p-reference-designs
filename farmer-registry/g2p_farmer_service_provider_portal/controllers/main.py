@@ -157,47 +157,32 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
         return json.dumps([{"name": name}])
 
     @http.route(
-        ["/update_zone_options"],
+        ["/update_district_options"],
         type="http",
         auth="user",
         website=True,
         csrf=False,
     )
-    def update_zone_options(self, region_id=None, **kwargs):
+    def update_district_options(self, region_id=None, **kwargs):
         if region_id and region_id.strip():
-            zones = request.env["g2p.zone"].sudo().search([("region", "=", int(region_id))])
-            zone_options = [{"id": zone.id, "name": zone.name} for zone in zones]
-            return json.dumps(zone_options)
+            districts = request.env["g2p.district"].sudo().search([("region", "=", int(region_id))])
+            districts_options = [{"id": district.id, "name": district.name} for district in districts]
+            return json.dumps(districts_options)
         else:
             return json.dumps([])
 
     @http.route(
-        ["/update_woreda_options"],
+        ["/update_block_options"],
         type="http",
         auth="user",
         website=True,
         csrf=False,
     )
-    def update_woreda_options(self, zone_id=None, **kwargs):
-        if zone_id and zone_id.strip():
-            woredas = request.env["g2p.woreda"].sudo().search([("zone", "=", int(zone_id))])
-            woredas_options = [{"id": woreda.id, "name": woreda.name} for woreda in woredas]
-            return json.dumps(woredas_options)
-        else:
-            return json.dumps([])
-
-    @http.route(
-        ["/update_kebele_options"],
-        type="http",
-        auth="user",
-        website=True,
-        csrf=False,
-    )
-    def update_kebele_options(self, woreda_id=None, **kwargs):
-        if woreda_id and woreda_id.strip():
-            kebeles = request.env["g2p.kebele"].sudo().search([("woreda", "=", int(woreda_id))])
-            kebeles_options = [{"id": kebele.id, "name": kebele.name} for kebele in kebeles]
-            return json.dumps(kebeles_options)
+    def update_block_options(self, district_id=None, **kwargs):
+        if district_id and district_id.strip():
+            blocks = request.env["g2p.block"].sudo().search([("district", "=", int(district_id))])
+            blocks_options = [{"id": block.id, "name": block.name} for block in blocks]
+            return json.dumps(blocks_options)
         else:
             return json.dumps([])
 
@@ -211,9 +196,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
     def group_create(self, **kw):
         gender = request.env["gender.type"].sudo().search([])
         region = request.env["g2p.region"].sudo().search([])
-        zone = request.env["g2p.zone"].sudo().search([])
-        woreda = request.env["g2p.woreda"].sudo().search([])
-        kebele = request.env["g2p.kebele"].sudo().search([])
+        district = request.env["g2p.district"].sudo().search([])
+        block = request.env["g2p.block"].sudo().search([])
         primary_language = request.env["g2p.lang"].sudo().search([])
         primary_cooperatives = request.env["g2p.primary.cooperative"].sudo().search([])
         cooperative_unions = request.env["g2p.cooperative.union"].sudo().search([])
@@ -385,9 +369,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 "has_national_id": has_national_id,
                 "gender": gender,
                 "region": region,
-                "zone": zone,
-                "woreda": woreda,
-                "kebele": kebele,
+                "district": district,
+                "block": block,
                 "hh_is_household_head": hh_is_household_head,
                 "primary_language": primary_language,
                 "has_personal_phone": has_personal_phone,
@@ -483,9 +466,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
 
             gender = request.env["gender.type"].sudo().search([])
             region = request.env["g2p.region"].sudo().search([])
-            zone = request.env["g2p.zone"].sudo().search([])
-            woreda = request.env["g2p.woreda"].sudo().search([])
-            kebele = request.env["g2p.kebele"].sudo().search([])
+            district = request.env["g2p.district"].sudo().search([])
+            block = request.env["g2p.block"].sudo().search([])
             primary_language = request.env["g2p.lang"].sudo().search([])
             primary_cooperatives = request.env["g2p.primary.cooperative"].sudo().search([])
             cooperative_unions = request.env["g2p.cooperative.union"].sudo().search([])
@@ -650,8 +632,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             members = group.group_membership_ids
             farmer_member_ids = []
             member_ids = []
-            other_kebele = ""
-            other_woreda = ""
+            other_block = ""
+            other_district = ""
             other_primary_coop = ""
             other_coop_union = ""
             other_income = ""
@@ -681,11 +663,11 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
 
                 # Check if additional_info is a dictionary and populate variables accordingly
                 if isinstance(additional_info, dict):
-                    if "Kebele" in additional_info:
-                        other_kebele = additional_info.get("Kebele", "")
+                    if "Block" in additional_info:
+                        other_block = additional_info.get("Block", "")
 
-                    if "Woreda" in additional_info:
-                        other_woreda = additional_info.get("Woreda", "")
+                    if "District" in additional_info:
+                        other_district = additional_info.get("District", "")
 
                     if "Primary Cooperative" in additional_info:
                         other_primary_coop = additional_info.get("Primary Cooperative", "")
@@ -705,9 +687,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     "has_national_id": has_national_id,
                     "gender": gender,
                     "region": region,
-                    "zone": zone,
-                    "woreda": woreda,
-                    "kebele": kebele,
+                    "district": district,
+                    "block": block,
                     "primary_language": primary_language,
                     "has_personal_phone": has_personal_phone,
                     "farming_type": farming_type,
@@ -741,8 +722,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     "ownership_type_selections": ownership_type_selections,
                     "crop_is_diseased_selections": crop_is_diseased_selections,
                     "livestock_is_diseased_selections": livestock_is_diseased_selections,
-                    "other_kebele": other_kebele,
-                    "other_woreda": other_woreda,
+                    "other_block": other_block,
+                    "other_district": other_district,
                     "other_primary_coop": other_primary_coop,
                     "other_coop_union": other_coop_union,
                     "other_income": other_income,
@@ -796,9 +777,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
     def individual_registrar_create(self, **kw):
         gender = request.env["gender.type"].sudo().search([])
         region = request.env["g2p.region"].sudo().search([])
-        # zone = request.env["g2p.zone"].sudo().search([])
-        # woreda = request.env["g2p.woreda"].sudo().search([])
-        # kebele = request.env["g2p.kebele"].sudo().search([])
+        # district = request.env["g2p.district"].sudo().search([])
+        # block = request.env["g2p.block"].sudo().search([])
         primary_language = request.env["g2p.lang"].sudo().search([])
         primary_cooperatives = request.env["g2p.primary.cooperative"].sudo().search([])
         cooperative_unions = request.env["g2p.cooperative.union"].sudo().search([])
@@ -970,9 +950,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 "has_national_id": has_national_id,
                 "gender": gender,
                 "region": region,
-                "zone": [],
-                "woreda": [],
-                "kebele": [],
+                "district": [],
+                "block": [],
                 "primary_language": primary_language,
                 "has_personal_phone": has_personal_phone,
                 "hh_is_household_head": hh_is_household_head,
@@ -1103,12 +1082,6 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             vals["hh_is_household_head"] = hh_is_household_head
 
     def _process_names(self, vals, kw):
-        if kw.get("first_name_amh").strip():
-            vals["first_name_amh"] = kw.get("first_name_amh")
-        if kw.get("family_name_amh").strip():
-            vals["family_name_amh"] = kw.get("family_name_amh")
-        if kw.get("gf_name_amh").strip():
-            vals["gf_name_amh"] = kw.get("gf_name_amh")
         if kw.get("first_name_other") and kw.get("first_name_other").strip():
             vals["first_name_other"] = kw.get("first_name_other")
         if kw.get("family_name_other") and kw.get("family_name_other").strip():
@@ -1119,12 +1092,10 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
     def _process_location(self, vals, kw):
         if kw.get("region"):
             vals["region"] = int(kw.get("region"))
-        if kw.get("zone"):
-            vals["zone"] = int(kw.get("zone"))
-        if kw.get("woreda"):
-            vals["woreda"] = int(kw.get("woreda"))
-        if kw.get("kebele"):
-            vals["kebele"] = int(kw.get("kebele"))
+        if kw.get("district"):
+            vals["district"] = int(kw.get("district"))
+        if kw.get("block"):
+            vals["block"] = int(kw.get("block"))
 
     def _process_additional_details(self, vals, kw):
         # if kw.get("birthdate"):
@@ -1161,8 +1132,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 .value
             )
             vals["has_personal_phone"] = has_personal_phone
-        ethiopia_country_id = (
-            request.env["res.country"].sudo().search([("name", "=", "Ethiopia")], limit=1).id
+        india_country_id = (
+            request.env["res.country"].sudo().search([("name", "=", "India")], limit=1).id
         )
         phone_no = []
         if has_personal_phone == "yes":
@@ -1173,7 +1144,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     {
                         "phone_no": kw.get("primary_phone"),
                         "phone_type": "primary",
-                        "country": ethiopia_country_id,
+                        "country": india_country_id,
                     },
                 )
             )
@@ -1185,7 +1156,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                         {
                             "phone_no": kw.get("secondary_phone"),
                             "phone_type": "secondary",
-                            "country": ethiopia_country_id,
+                            "country": india_country_id,
                         },
                     )
                 )
@@ -1197,7 +1168,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     {
                         "phone_no": kw.get("other_phone"),
                         "phone_type": "other",
-                        "country": ethiopia_country_id,
+                        "country": india_country_id,
                     },
                 )
             )
@@ -1209,7 +1180,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                         {
                             "phone_no": kw.get("secondary_phone"),
                             "phone_type": "secondary",
-                            "country": ethiopia_country_id,
+                            "country": india_country_id,
                         },
                     )
                 )
@@ -1284,9 +1255,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     0,
                     {
                         "region": int(kw.get(f"land_region_{index}")),
-                        "zone": int(kw.get(f"land_zone_{index}")),
-                        "woreda": int(kw.get(f"land_woreda_{index}")),
-                        "kebele": int(kw.get(f"land_kebele_{index}")),
+                        "district": int(kw.get(f"land_district_{index}")),
+                        "block": int(kw.get(f"land_block_{index}")),
                         "land_size": kw.get(f"land_size_{index}"),
                         "ownership_type": kw.get(f"ownership_type_{index}"),
                         "land_uses": kw.get(f"land_uses_{index}"),
@@ -1382,9 +1352,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             # Other data retrieval
             gender = request.env["gender.type"].sudo().search([])
             region = request.env["g2p.region"].sudo().search([])
-            zone = request.env["g2p.zone"].sudo().search([("region", "=", beneficiary.region.id)])
-            woreda = request.env["g2p.woreda"].sudo().search([("zone", "=", beneficiary.zone.id)])
-            kebele = request.env["g2p.kebele"].sudo().search([("woreda", "=", beneficiary.woreda.id)])
+            district = request.env["g2p.district"].sudo().search([("region", "=", beneficiary.region.id)])
+            block = request.env["g2p.block"].sudo().search([("district", "=", beneficiary.district.id)])
             primary_language = request.env["g2p.lang"].sudo().search([])
             primary_cooperatives = request.env["g2p.primary.cooperative"].sudo().search([])
             cooperative_unions = request.env["g2p.cooperative.union"].sudo().search([])
@@ -1414,19 +1383,19 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             #         additional_info = {}
 
             # # Initialize variables
-            # other_kebele = ""
-            # other_woreda = ""
+            # other_block = ""
+            # other_district = ""
             # other_primary_coop = ""
             # other_coop_union = ""
             # other_income = ""
 
             # # Check if additional_info is a dictionary and populate variables accordingly
             # if isinstance(additional_info, dict):
-            #     if "Kebele" in additional_info:
-            #         other_kebele = additional_info.get("Kebele", "")
+            #     if "Block" in additional_info:
+            #         other_block = additional_info.get("Block", "")
 
-            #     if "Woreda" in additional_info:
-            #         other_woreda = additional_info.get("Woreda", "")
+            #     if "District" in additional_info:
+            #         other_district = additional_info.get("District", "")
 
             #     if "Primary Cooperative" in additional_info:
             #         other_primary_coop = additional_info.get("Primary Cooperative", "")
@@ -1529,9 +1498,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     "hh_is_household_head": hh_is_household_head,
                     "gender": gender,
                     "region": region,
-                    "zone": zone,
-                    "woreda": woreda,
-                    "kebele": kebele,
+                    "district": district,
+                    "block": block,
                     "primary_language": primary_language,
                     "has_personal_phone": has_personal_phone,
                     "primary_phone": primary_phone,
@@ -1587,8 +1555,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     "do_you_use_insecticide_selection_id": do_you_use_insecticide_selection_id,
                     "do_you_use_improved_seed_selection_id": do_you_use_improved_seed_selection_id,
                     "has_finance_access_selection_id": has_finance_access_selection_id,
-                    "other_kebele": additional_info_data["other_kebele"],
-                    "other_woreda": additional_info_data["other_woreda"],
+                    "other_block": additional_info_data["other_block"],
+                    "other_district": additional_info_data["other_district"],
                     "other_primary_coop": additional_info_data["other_primary_coop"],
                     "other_coop_union": additional_info_data["other_coop_union"],
                     "other_income": additional_info_data["other_income"],
@@ -1612,8 +1580,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
 
         # Initialize default values
         info = {
-            "other_kebele": "",
-            "other_woreda": "",
+            "other_block": "",
+            "other_district": "",
             "other_primary_coop": "",
             "other_coop_union": "",
             "other_income": "",
@@ -1621,8 +1589,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
 
         # Populate the info dictionary if additional_info is valid
         if isinstance(additional_info, dict):
-            info["other_kebele"] = additional_info.get("Kebele", "")
-            info["other_woreda"] = additional_info.get("Woreda", "")
+            info["other_block"] = additional_info.get("Block", "")
+            info["other_district"] = additional_info.get("District", "")
             info["other_primary_coop"] = additional_info.get("Primary Cooperative", "")
             info["other_coop_union"] = additional_info.get("Cooperative Union", "")
             info["other_income"] = additional_info.get("Household Income", "")
@@ -1894,8 +1862,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     )
 
             # Handle phone numbers
-            ethiopia_country_id = (
-                request.env["res.country"].sudo().search([("name", "=", "Ethiopia")], limit=1).id
+            india_country_id = (
+                request.env["res.country"].sudo().search([("name", "=", "India")], limit=1).id
             )
 
             phone_number_ids = self.handle_phone_numbers(
@@ -1903,7 +1871,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 primary_phone=kw.get("primary_phone"),
                 secondary_phone=kw.get("secondary_phone"),
                 other_phone=kw.get("other_phone"),
-                country_id=ethiopia_country_id,
+                country_id=india_country_id,
             )
 
             # Socio-economic data
@@ -2025,16 +1993,12 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 "gf_name_eng": kw.get("gf_name_eng"),
                 "reg_ids": reg_ids,
                 "name": name,
-                "first_name_amh": kw.get("first_name_amh"),
-                "family_name_amh": kw.get("family_name_amh"),
-                "gf_name_amh": kw.get("gf_name_amh"),
                 "first_name_other": kw.get("first_name_other"),
                 "family_name_other": kw.get("family_name_other"),
                 "gf_name_other": kw.get("gf_name_other"),
                 "region": int(kw.get("region", member.region)),
-                "zone": int(kw.get("zone", member.zone)),
-                "woreda": int(kw.get("woreda", member.woreda)),
-                "kebele": int(kw.get("kebele", member.kebele)),
+                "district": int(kw.get("district", member.district)),
+                "block": int(kw.get("block", member.block)),
                 "birthdate": kw.get("birthdate", member.birthdate),
                 "gender": kw.get("gender", member.gender),
                 "has_personal_phone": has_personal_phone,
@@ -2135,25 +2099,25 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             if other_income_details:
                 other_info["Household Income"] = other_income_details
 
-        # woreda
+        # district
 
-        woreda_id = kw.get("woreda")
-        other_woreda = kw.get("other_woreda")
+        district_id = kw.get("district")
+        other_district = kw.get("other_district")
 
-        searched_woreda_id = (
-            request.env["g2p.woreda"].sudo().search(["|", ("name", "=", "Others"), ("name", "=", "Other")]).id
+        searched_district_id = (
+            request.env["g2p.district"].sudo().search(["|", ("name", "=", "Others"), ("name", "=", "Other")]).id
         )
 
-        if searched_woreda_id == int(woreda_id):
-            if other_woreda:
-                other_info["Woreda"] = other_woreda
+        if searched_district_id == int(district_id):
+            if other_district:
+                other_info["District"] = other_district
 
-        # kebele
-        kebele_id = kw.get("kebele")
-        other_kebele = kw.get("other_kebele")
+        # block
+        block_id = kw.get("block")
+        other_block = kw.get("other_block")
 
-        searched_kebele_id = (
-            request.env["g2p.kebele"]
+        searched_block_id = (
+            request.env["g2p.block"]
             .sudo()
             .search(
                 [
@@ -2165,9 +2129,9 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             .id
         )
 
-        if searched_kebele_id == int(kebele_id):
-            if other_kebele:
-                other_info["Kebele"] = other_kebele
+        if searched_block_id == int(block_id):
+            if other_block:
+                other_info["Block"] = other_block
 
         # primary coop
         primary_coop_ids = kw.get("name_of_primary_coop")
@@ -2777,12 +2741,11 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
         )
 
         region = request.env["g2p.region"].sudo().search([])
-        zone = []
-        woreda = []
-        kebele = []
+        district = []
+        block = []
         return request.render(
             "g2p_service_provider_beneficiary_management.individual_list",
-            {"individual": individual, "region": region, "zone": zone, "wereda": woreda, "kebele": kebele},
+            {"individual": individual, "region": region, "district": district, "block": block},
         )
 
     @http.route("/serviceprovider/group", type="http", auth="user", website=True)
@@ -2805,12 +2768,11 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             )
         )
         region = request.env["g2p.region"].sudo().search([])
-        zone = []
-        woreda = []
-        kebele = []
+        district = []
+        block = []
         return request.render(
             "g2p_service_provider_beneficiary_management.group_list",
-            {"groups": groups, "region": region, "zone": zone, "wereda": woreda, "kebele": kebele},
+            {"groups": groups, "region": region, "district": district, "block": block},
         )
 
     @http.route(
@@ -3176,9 +3138,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
         res = dict()
         try:
             region = self._convert_to_int(kw.get("region"))
-            zone = self._convert_to_int(kw.get("zone"))
-            woreda = self._convert_to_int(kw.get("woreda"))
-            kebele = self._convert_to_int(kw.get("kebele"))
+            district = self._convert_to_int(kw.get("district"))
+            block = self._convert_to_int(kw.get("block"))
 
             additional_info = kw.get("additional_info", {})
             # try:
@@ -3197,15 +3158,15 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                 }
             )
 
-            group_rec = self._get_or_create_group(kw, region, zone, woreda, kebele, enumerator)
+            group_rec = self._get_or_create_group(kw, region, district, block, enumerator)
 
-            vals = self._prepare_individual_vals(kw, region, zone, woreda, kebele)
+            vals = self._prepare_individual_vals(kw, region, district, block)
 
             vals = self.process_land(kw, vals)
 
             vals["crop_information_ids"] = self._prepare_crop_information(kw.get("cropRecords"))
             vals["livestock_information_ids"] = self._livestock_information(kw.get("livestockRecord"))
-            vals["phone_number_ids"] = self._prepare_phone_numbers(kw, region, zone, woreda, kebele, vals)
+            vals["phone_number_ids"] = self._prepare_phone_numbers(kw, region, district, block, vals)
             # Socioeconomic data
             self._prepare_socioeconomic_data(kw, vals)
 
@@ -3252,7 +3213,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
     def _convert_to_int(self, value):
         return int(value.strip()) if value and value.strip() else None
 
-    def _get_or_create_group(self, kw, region, zone, woreda, kebele, enumerator):
+    def _get_or_create_group(self, kw, region, district, block, enumerator):
         given_name = kw.get("given_name")
         father_name = kw.get("family_name")
         family_name = kw.get("gf_name_eng")
@@ -3268,9 +3229,8 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     {
                         "name": head_name,
                         "region": region,
-                        "zone": zone,
-                        "woreda": woreda,
-                        "kebele": kebele,
+                        "district": district,
+                        "block": block,
                         "kind": group_type.id,
                         "is_registrant": True,
                         "is_group": True,
@@ -3280,14 +3240,13 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
             )
         return None
 
-    def _prepare_individual_vals(self, kw, region, zone, woreda, kebele):
+    def _prepare_individual_vals(self, kw, region, district, block):
         vals = {
             "is_registrant": True,
             "is_group": False,
             "region": region,
-            "zone": zone,
-            "woreda": woreda,
-            "kebele": kebele,
+            "district": district,
+            "block": block,
         }
         name_parts = []
         for field in ["given_name", "family_name", "gf_name_eng"]:
@@ -3298,9 +3257,6 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
         vals["name"] = " ".join(name_parts).strip()
 
         other_fields = {
-            "first_name_amh": "firstNameAmh",
-            "family_name_amh": "familyNameAmh",
-            "gf_name_amh": "gFNameAmh",
             "first_name_other": "firstNameOther",
             "family_name_other": "familyNameOther",
             "gf_name_other": "lastNameOther",
@@ -3363,11 +3319,11 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                         break
         return livestock_info_data
 
-    def _prepare_phone_numbers(self, kw, region, zone, woreda, kebele, vals):
+    def _prepare_phone_numbers(self, kw, region, district, block, vals):
         has_personal_phone = self._get_selection_value("ir.model.fields.selection", kw.get("havePhoneNumber"))
         vals["has_personal_phone"] = has_personal_phone
-        ethiopia_country_id = (
-            request.env["res.country"].sudo().search([("name", "=", "Ethiopia")], limit=1).id
+        india_country_id = (
+            request.env["res.country"].sudo().search([("name", "=", "India")], limit=1).id
         )
         phone_no = []
         if has_personal_phone == "yes":
@@ -3378,7 +3334,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     {
                         "phone_no": kw.get("primaryPhoneNumber"),
                         "phone_type": "primary",
-                        "country_id": ethiopia_country_id,
+                        "country_id": india_country_id,
                     },
                 )
             )
@@ -3390,7 +3346,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                         {
                             "phone_no": kw.get("secondaryPhoneNumber"),
                             "phone_type": "secondary",
-                            "country_id": ethiopia_country_id,
+                            "country_id": india_country_id,
                         },
                     )
                 )
@@ -3402,7 +3358,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                     {
                         "phone_no": kw.get("otherPhoneNumber"),
                         "phone_type": "other",
-                        "country_id": ethiopia_country_id,
+                        "country_id": india_country_id,
                     },
                 )
             )
@@ -3414,7 +3370,7 @@ class FarmerserviceProviderBeneficiaryManagement(G2PServiceProviderBeneficiaryMa
                         {
                             "phone_no": kw.get("secondaryPhoneNumber"),
                             "phone_type": "secondary",
-                            "country_id": ethiopia_country_id,
+                            "country_id": india_country_id,
                         },
                     )
                 )

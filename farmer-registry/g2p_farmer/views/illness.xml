@@ -4,10 +4,10 @@
         <field name="name">g2p.illness.type.view.form</field>
         <field name="model">g2p.illness.type</field>
         <field name="arch" type="xml">
-        <tree create="true" delete="true" edit="true" editable="bottom">
-                    <field name="name" />
-                    <field name="code" />
-                    <field name="illness_type" />
+            <tree create="true" delete="true" edit="true" editable="bottom">
+                <field name="name" />
+                <field name="code" />
+                <field name="illness_type" />
             </tree>
         </field>
     </record>
@@ -18,11 +18,11 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem
-        id="g2p_ilness_menu"
-        action="g2p_illness_action"
-        name="Illness Types"
-        sequence="620"
-        parent="g2p_registry_base.g2p_configuration_menu_root"
+    <menuitem 
+        id="g2p_ilness_menu" 
+        action="g2p_illness_action" 
+        name="Illness Types" 
+        sequence="620" 
+        parent="g2p_registry_base.g2p_configuration_menu_root" 
     />
 </odoo>

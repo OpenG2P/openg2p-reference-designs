@@ -1,74 +1,148 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-<!-- <odoo noupdate="1"> -->
-    <record id="region_addis_ababa_14" model="g2p.region">
-        <field name="code">ET14</field>
-        <field name="name">Addis Ababa</field>
-        <field name="iso_code">ET-AA</field>
+    <record id="region_jammu_and_kashmir_01" model="g2p.region">
+        <field name="code">IN01</field>
+        <field name="name">Jammu and Kashmir</field>
+        <field name="iso_code">IN-JK</field>
     </record>
-    <record id="region_afar_2" model="g2p.region">
-        <field name="code">ET02</field>
-        <field name="name">Afar</field>
-        <field name="iso_code">ET-AF</field>
+    <record id="region_himachal_pradesh_02" model="g2p.region">
+        <field name="code">IN02</field>
+        <field name="name">Himachal Pradesh</field>
+        <field name="iso_code">IN-HP</field>
     </record>
-    <record id="region_amhara_3" model="g2p.region">
-        <field name="code">ET03</field>
-        <field name="name">Amhara</field>
-        <field name="iso_code">ET-AM</field>
+    <record id="region_punjab_03" model="g2p.region">
+        <field name="code">IN03</field>
+        <field name="name">Punjab</field>
+        <field name="iso_code">IN-PB</field>
     </record>
-    <record id="region_benishangul_gumuz_6" model="g2p.region">
-        <field name="code">ET06</field>
-        <field name="name">Benishangul Gumuz</field>
-        <field name="iso_code">ET-BE</field>
+    <record id="region_uttarakhand_05" model="g2p.region">
+        <field name="code">IN05</field>
+        <field name="name">Uttarakhand</field>
+        <field name="iso_code">IN-UT</field>
     </record>
-    <record id="region_central_ethiopia_10" model="g2p.region">
-        <field name="code">ET07</field>
-        <field name="name">Central Ethiopia</field>
-        <field name="iso_code">ET-CE</field>
+    <record id="region_haryana_06" model="g2p.region">
+        <field name="code">IN06</field>
+        <field name="name">Haryana</field>
+        <field name="iso_code">IN-HR</field>
     </record>
-    <record id="region_dire_dawa_astedadar_15" model="g2p.region">
-        <field name="code">ET15</field>
-        <field name="name">Dire Dawa Astedadar</field>
-        <field name="iso_code">ET-DD</field>
+    <record id="region_rajasthan_08" model="g2p.region">
+        <field name="code">IN08</field>
+        <field name="name">Rajasthan</field>
+        <field name="iso_code">IN-RJ</field>
     </record>
-    <record id="region_ethiopia_somali_5" model="g2p.region">
-        <field name="code">ET05</field>
-        <field name="name">Ethiopia Somali</field>
-        <field name="iso_code">ET-SO</field>
+    <record id="region_uttar_pradesh_09" model="g2p.region">
+        <field name="code">IN09</field>
+        <field name="name">Uttar Pradesh</field>
+        <field name="iso_code">IN-UP</field>
     </record>
-    <record id="region_gambela_12" model="g2p.region">
-        <field name="code">ET12</field>
-        <field name="name">Gambela</field>
-        <field name="iso_code">ET-GA</field>
+    <record id="region_bihar_10" model="g2p.region">
+        <field name="code">IN10</field>
+        <field name="name">Bihar</field>
+        <field name="iso_code">IN-BR</field>
     </record>
-    <record id="region_hareri_13" model="g2p.region">
-        <field name="code">ET13</field>
-        <field name="name">Hareri</field>
-        <field name="iso_code">ET-HA</field>
+    <record id="region_sikkim_11" model="g2p.region">
+        <field name="code">IN11</field>
+        <field name="name">Sikkim</field>
+        <field name="iso_code">IN-SK</field>
     </record>
-    <record id="region_oromiya_4" model="g2p.region">
-        <field name="code">ET04</field>
-        <field name="name">Oromiya</field>
-        <field name="iso_code">ET-OR</field>
+    <record id="region_arunachal_pradesh_12" model="g2p.region">
+        <field name="code">IN12</field>
+        <field name="name">Arunachal Pradesh</field>
+        <field name="iso_code">IN-AR</field>
     </record>
-    <record id="region_sidama_8" model="g2p.region">
-        <field name="code">ET16</field>
-        <field name="name">Sidama</field>
-        <field name="iso_code">ET-SI</field>
+    <record id="region_nagaland_13" model="g2p.region">
+        <field name="code">IN13</field>
+        <field name="name">Nagaland</field>
+        <field name="iso_code">IN-NL</field>
     </record>
-    <record id="region_south_ethiopia_7" model="g2p.region">
-        <field name="code">ET08</field>
-        <field name="name">South Ethiopia</field>
-        <field name="iso_code">ET-SN</field>
+    <record id="region_manipur_14" model="g2p.region">
+        <field name="code">IN14</field>
+        <field name="name">Manipur</field>
+        <field name="iso_code">IN-MN</field>
     </record>
-    <record id="region_south_west_ethiopia_people_9" model="g2p.region">
-        <field name="code">ET11</field>
-        <field name="name">South West Ethiopia People</field>
-        <field name="iso_code">ET-SW</field>
+    <record id="region_mizoram_15" model="g2p.region">
+        <field name="code">IN15</field>
+        <field name="name">Mizoram</field>
+        <field name="iso_code">IN-MZ</field>
     </record>
-    <record id="region_tigray_1" model="g2p.region">
-        <field name="code">ET01</field>
-        <field name="name">Tigray</field>
-        <field name="iso_code">ET-TI</field>
+    <record id="region_tripura_16" model="g2p.region">
+        <field name="code">IN16</field>
+        <field name="name">Tripura</field>
+        <field name="iso_code">IN-TR</field>
+    </record>
+    <record id="region_meghalaya_17" model="g2p.region">
+        <field name="code">IN17</field>
+        <field name="name">Meghalaya</field>
+        <field name="iso_code">IN-ML</field>
+    </record>
+    <record id="region_assam_18" model="g2p.region">
+        <field name="code">IN18</field>
+        <field name="name">Assam</field>
+        <field name="iso_code">IN-AS</field>
+    </record>
+    <record id="region_west_bengal_19" model="g2p.region">
+        <field name="code">IN19</field>
+        <field name="name">West Bengal</field>
+        <field name="iso_code">IN-WB</field>
+    </record>
+    <record id="region_jharkhand_20" model="g2p.region">
+        <field name="code">IN20</field>
+        <field name="name">Jharkhand</field>
+        <field name="iso_code">IN-JH</field>
+    </record>
+    <record id="region_orissa_21" model="g2p.region">
+        <field name="code">IN21</field>
+        <field name="name">Orissa</field>
+        <field name="iso_code">IN-OR</field>
+    </record>
+    <record id="region_chhattisgarh_22" model="g2p.region">
+        <field name="code">IN22</field>
+        <field name="name">Chhattisgarh</field>
+        <field name="iso_code">IN-CT</field>
+    </record>
+    <record id="region_madhya_pradesh_23" model="g2p.region">
+        <field name="code">IN23</field>
+        <field name="name">Madhya Pradesh</field>
+        <field name="iso_code">IN-MP</field>
+    </record>
+    <record id="region_gujarat_24" model="g2p.region">
+        <field name="code">IN24</field>
+        <field name="name">Gujarat</field>
+        <field name="iso_code">IN-GJ</field>
+    </record>
+    <record id="region_maharashtra_27" model="g2p.region">
+        <field name="code">IN27</field>
+        <field name="name">Maharashtra</field>
+        <field name="iso_code">IN-MH</field>
+    </record>
+    <record id="region_andhra_pradesh_28" model="g2p.region">
+        <field name="code">IN28</field>
+        <field name="name">Andhra Pradesh</field>
+        <field name="iso_code">IN-AP</field>
+    </record>
+    <record id="region_karnataka_29" model="g2p.region">
+        <field name="code">IN29</field>
+        <field name="name">Karnataka</field>
+        <field name="iso_code">IN-KA</field>
+    </record>
+    <record id="region_goa_30" model="g2p.region">
+        <field name="code">IN30</field>
+        <field name="name">Goa</field>
+        <field name="iso_code">IN-GA</field>
+    </record>
+    <record id="region_kerala_32" model="g2p.region">
+        <field name="code">IN32</field>
+        <field name="name">Kerala</field>
+        <field name="iso_code">IN-KL</field>
+    </record>
+    <record id="region_tamil_nadu_33" model="g2p.region">
+        <field name="code">IN33</field>
+        <field name="name">Tamil Nadu</field>
+        <field name="iso_code">IN-TN</field>
+    </record>
+    <record id="region_telangana_36" model="g2p.region">
+        <field name="code">IN36</field>
+        <field name="name">Telangana</field>
+        <field name="iso_code">IN-TG</field>
     </record>
 </odoo>

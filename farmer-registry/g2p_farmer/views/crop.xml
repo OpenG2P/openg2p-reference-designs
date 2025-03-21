@@ -19,11 +19,11 @@
         <field name="view_mode">tree,form,graph</field>
     </record>
 
-    <menuitem
-        id="g2p_crop_menu"
-        action="g2p_crop_view_tree_action"
-        name="Crops"
-        sequence="610"
-        parent="g2p_registry_base.g2p_configuration_menu_root"
+    <menuitem 
+        id="g2p_crop_menu" 
+        action="g2p_crop_view_tree_action" 
+        name="Crops" 
+        sequence="610" 
+        parent="g2p_registry_base.g2p_configuration_menu_root" 
     />
 </odoo>

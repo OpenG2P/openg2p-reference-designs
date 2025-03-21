@@ -522,102 +522,6 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row">
-                                                    <div class="col-lg-4">
-                                                        <div
-                                                            class="s_website_form_field lmargin-input"
-                                                            style="margin-right: -10%"
-                                                        >
-                                                            <label
-                                                                class="s_website_form_label"
-                                                                for="first_name_amh"
-                                                            >
-                                                                <span
-                                                                    class="s_website_form_label_content"
-                                                                    style="color: #666666;"
-                                                                >Given
-                                                                    Name
-                                                                </span>
-                                                                <span style="color:green;">(Amharic)</span>
-                                                                <span
-                                                                    class="amh_names_required s_website_form_mark"
-                                                                >
-                                                                    *</span>
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="first_name_amh"
-                                                                name="first_name_amh"
-                                                                class="form-control"
-                                                                required="required"
-                                                                placeholder="ስም ያስገቡ"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div
-                                                            class="s_website_form_field lmargin-input"
-                                                            style="margin-right: -10%"
-                                                        >
-                                                            <label
-                                                                class="s_website_form_label"
-                                                                for="family_name_amh"
-                                                            >
-                                                                <span
-                                                                    class="s_website_form_label_content"
-                                                                    style="color: #666666;"
-                                                                >Father's
-                                                                    Name</span>
-                                                                <span style="color:green;">(Amharic)</span>
-                                                                <span
-                                                                    class="amh_names_required s_website_form_mark"
-                                                                >
-                                                                    *</span>
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="family_name_amh"
-                                                                name="family_name_amh"
-                                                                required="required"
-                                                                class="form-control"
-                                                                placeholder="ስም ያስገቡ"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4">
-                                                        <div
-                                                            class="s_website_form_field lmargin-input"
-                                                            style="margin-right: -10%"
-                                                        >
-                                                            <label
-                                                                class="s_website_form_label"
-                                                                for="gf_name_amh"
-                                                            >
-                                                                <span
-                                                                    class="s_website_form_label_content"
-                                                                    style="color: #666666;"
-                                                                >Grandfather's
-                                                                    Name </span>
-                                                                <span style="color:green;">
-                                                                    (Amharic)</span>
-                                                                <span
-                                                                    class="amh_names_required s_website_form_mark"
-                                                                >
-                                                                    *</span>
-                                                            </label>
-                                                            <input
-                                                                type="text"
-                                                                id="gf_name_amh"
-                                                                name="gf_name_amh"
-                                                                required="required"
-                                                                class="form-control"
-                                                                placeholder="ስም ያስገቡ"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
                                                 <div
                                                     class="row"
                                                     style="margin-left: 10px; margin-right:20px;"
@@ -668,36 +572,7 @@
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-lg-4 left-margin-input">
-                                                        <div
-                                                            class="s_website_form_field lmargin-input"
-                                                            style="margin-right: -10%"
-                                                        >
-                                                            <label class="s_website_form_label">
-                                                                <span class="s_website_form_label_content">
-                                                                    Zone</span>
-                                                                <span class="s_website_form_mark"> *</span>
-                                                            </label>
-                                                            <div class="row">
-                                                                <div class="col">
-                                                                    <select
-                                                                        id="zon_selection"
-                                                                        class="form-select"
-                                                                        name="zone"
-                                                                        onchange="validateElement(this)"
-                                                                        required="required"
-                                                                    >
-                                                                        <option value="">Select</option>
-                                                                        <t t-foreach="zone" t-as="option">
-                                                                            <option t-att-value="option.id">
-                                                                                <t t-esc="option.name" />
-                                                                            </option>
-                                                                        </t>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
 
                                                     <div class="col-lg-4">
                                                         <div
@@ -706,20 +581,21 @@
                                                         >
                                                             <label class="s_website_form_label">
                                                                 <span class="s_website_form_label_content">
-                                                                    Woreda</span>
+                                                                    District
+                                                                </span>
                                                                 <span class="s_website_form_mark"> *</span>
                                                             </label>
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <select
-                                                                        id="woreda_selection"
+                                                                        id="district_selection"
                                                                         class="form-select"
-                                                                        name="woreda"
+                                                                        name="district"
                                                                         onchange="validateElement(this)"
                                                                         required="required"
                                                                     >
                                                                         <option value="">Select</option>
-                                                                        <t t-foreach="woreda" t-as="option">
+                                                                        <t t-foreach="district" t-as="option">
                                                                             <option t-att-value="option.id">
                                                                                 <t t-esc="option.name" />
                                                                             </option>
@@ -741,20 +617,21 @@
                                                         >
                                                             <label class="s_website_form_label">
                                                                 <span class="s_website_form_label_content">
-                                                                    Kebele</span>
+                                                                    Block
+                                                                </span>
                                                                 <span class="s_website_form_mark"> *</span>
                                                             </label>
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <select
-                                                                        id="kebele_selection"
+                                                                        id="block_selection"
                                                                         class="form-select"
-                                                                        name="kebele"
+                                                                        name="block"
                                                                         onchange="validateElement(this)"
                                                                         required="required"
                                                                     >
                                                                         <option value="">Select</option>
-                                                                        <t t-foreach="kebele" t-as="option">
+                                                                        <t t-foreach="block" t-as="option">
                                                                             <option t-att-value="option.id">
                                                                                 <t t-esc="option.name" />
                                                                             </option>

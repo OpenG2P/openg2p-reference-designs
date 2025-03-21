@@ -587,98 +587,7 @@
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <div class="row">
-                                                                                                                <div class="col-lg-4">
-                                                                                                                    <div class="s_website_form_field lmargin-input">
-                                                                                                                        <label
-                                                                                                                            class="s_website_form_label"
-                                                                                                                            for="first_name_amh"
-                                                                                                                        >
-                                                                                                                            <span
-                                                                                                                                class="s_website_form_label_content"
-                                                                                                                                style="color: #666666;"
-                                                                                                                            >Given
-                                                                                                                                Name
-                                                                                                                            </span>
-                                                                                                                            <span style="color:green;">
-                                                                                                                                (Amharic)</span>
-                                                                                                                            <span
-                                                                                                                                class="amh_names_required s_website_form_mark"
-                                                                                                                            >
-                                                                                                                                *</span>
-                                                                                                                        </label>
-                                                                                                                        <input
-                                                                                                                            type="text"
-                                                                                                                            id="first_name_amh"
-                                                                                                                            name="first_name_amh"
-                                                                                                                            class="form-control"
-                                                                                                                            t-att-value="beneficiary.first_name_amh"
-                                                                                                                            required="required"
-                                                                                                                            oninput="validateElement(this)"
-                                                                                                                            placeholder="ስም ያስገቡ"
-                                                                                                                        />
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-4">
-                                                                                                                    <div class="s_website_form_field lmargin-input">
-                                                                                                                        <label
-                                                                                                                            class="s_website_form_label"
-                                                                                                                            for="family_name_amh"
-                                                                                                                        >
-                                                                                                                            <span
-                                                                                                                                class="s_website_form_label_content"
-                                                                                                                                style="color: #666666;"
-                                                                                                                            >Father's
-                                                                                                                                Name</span>
-                                                                                                                            <span style="color:green;">
-                                                                                                                                (Amharic)</span>
-                                                                                                                            <span
-                                                                                                                                class="amh_names_required s_website_form_mark"
-                                                                                                                            >
-                                                                                                                                *</span>
-                                                                                                                        </label>
-                                                                                                                        <input
-                                                                                                                            type="text"
-                                                                                                                            id="family_name_amh"
-                                                                                                                            name="family_name_amh"
-                                                                                                                            class="form-control"
-                                                                                                                            t-att-value="beneficiary.family_name_amh"
-                                                                                                                            oninput="validateElement(this)"
-                                                                                                                            placeholder="ስም ያስገቡ"
-                                                                                                                        />
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col-lg-4">
-                                                                                                                    <div class="s_website_form_field lmargin-input">
-                                                                                                                        <label
-                                                                                                                            class="s_website_form_label"
-                                                                                                                            for="gf_name_amh"
-                                                                                                                        >
-                                                                                                                            <span
-                                                                                                                                class="s_website_form_label_content"
-                                                                                                                                style="color: #666666;"
-                                                                                                                            >Grandfather's
-                                                                                                                                Name </span>
-                                                                                                                            <span style="color:green;">
-                                                                                                                                (Amharic)</span>
-                                                                                                                            <span
-                                                                                                                                class="amh_names_required s_website_form_mark"
-                                                                                                                            >
-                                                                                                                                *</span>
-                                                                                                                        </label>
-                                                                                                                        <input
-                                                                                                                            type="text"
-                                                                                                                            id="gf_name_amh"
-                                                                                                                            name="gf_name_amh"
-                                                                                                                            class="form-control"
-                                                                                                                            required="required"
-                                                                                                                            t-att-value="beneficiary.gf_name_amh"
-                                                                                                                            oninput="validateElement(this)"
-                                                                                                                            placeholder="ስም ያስገቡ"
-                                                                                                                        />
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                            </div>
+                                                                                                           
                                                                                                             <div
                                                                                                                 class="row"
                                                                                                                 style="margin-left: 10px; margin-right:20px;"
@@ -728,66 +637,32 @@
                                                                                                                         </div>
                                                                                                                     </div>
                                                                                                                 </div>
-                                                                                                                <div class="col-lg-4 left-margin-input">
-                                                                                                                    <div class="s_website_form_field lmargin-input">
-                                                                                                                        <label class="s_website_form_label">
-                                                                                                                            <span
-                                                                                                                                class="s_website_form_label_content"
-                                                                                                                            >
-                                                                                                                                Zone</span>
-                                                                                                                            <span class="s_website_form_mark">
-                                                                                                                                *</span>
-                                                                                                                        </label>
-                                                                                                                        <div class="row">
-                                                                                                                            <div class="col">
-                                                                                                                                <select
-                                                                                                                                    id="zon_selection"
-                                                                                                                                    class="form-select"
-                                                                                                                                    name="zone"
-                                                                                                                                    onchange="validateElement(this)"
-                                                                                                                                    required="required"
-                                                                                                                                >
-                                                                                                                                    <option value="">Select</option>
-                                                                                                                                    <t t-foreach="zone" t-as="option">
-                                                                                                                                        <option
-                                                                                                                                            t-att-value="option.id"
-                                                                                                                                            t-att-selected="option.id == beneficiary.zone.id"
-                                                                                                                                        >
-                                                                                                                                            <t t-esc="option.name" />
-                                                                                                                                        </option>
-                                                                                                                                    </t>
-                                                                                                                                </select>
-                                                                                                                            </div>
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </div>
+                                                                                                               
                                                                                                                 <div class="col-lg-4">
                                                                                                                     <div class="s_website_form_field lmargin-input">
                                                                                                                         <label class="s_website_form_label">
-                                                                                                                            <span
-                                                                                                                                class="s_website_form_label_content"
-                                                                                                                            >
-                                                                                                                                Woreda</span>
-                                                                                                                            <span class="s_website_form_mark">
-                                                                                                                                *</span>
+                                                                                                                            <span class="s_website_form_label_content">
+                                                                                                                                District
+                                                                                                                            </span>
+                                                                                                                            <span class="s_website_form_mark">*</span>
                                                                                                                         </label>
                                                                                                                         <div class="row">
                                                                                                                             <div class="col">
                                                                                                                                 <select
-                                                                                                                                    id="woreda_selection"
+                                                                                                                                    id="district_selection"
                                                                                                                                     class="form-select"
-                                                                                                                                    name="woreda"
+                                                                                                                                    name="district"
                                                                                                                                     onchange="validateElement(this)"
                                                                                                                                     required="required"
                                                                                                                                 >
                                                                                                                                     <option value="">Select</option>
                                                                                                                                     <t
-                                                                                                                                        t-foreach="woreda"
+                                                                                                                                        t-foreach="district"
                                                                                                                                         t-as="option"
                                                                                                                                     >
                                                                                                                                         <option
                                                                                                                                             t-att-value="option.id"
-                                                                                                                                            t-att-selected="option.id == beneficiary.woreda.id"
+                                                                                                                                            t-att-selected="option.id == beneficiary.district.id"
                                                                                                                                         >
                                                                                                                                             <t t-esc="option.name" />
                                                                                                                                         </option>
@@ -801,7 +676,7 @@
                                                                                                             <div class="row">
                                                                                                                 <div
                                                                                                                     class="col-lg-4"
-                                                                                                                    id="otherWoredaField"
+                                                                                                                    id="otherDistrictField"
                                                                                                                     style="display: none;"
                                                                                                                 >
                                                                                                                     <div class="s_website_form_field lmargin-input">
@@ -810,15 +685,15 @@
                                                                                                                                 class="s_website_form_label_content"
                                                                                                                                 style="color: #666666;"
                                                                                                                             >
-                                                                                                                                Please Specify the Woreda
+                                                                                                                                Please Specify the District
                                                                                                                             </span>
                                                                                                                         </label>
                                                                                                                         <input
                                                                                                                             type="text"
                                                                                                                             class="form-control"
-                                                                                                                            name="other_woreda"
+                                                                                                                            name="other_district"
                                                                                                                             placeholder="Please specify"
-                                                                                                                            t-att-value="other_woreda"
+                                                                                                                            t-att-value="other_district"
                                                                                                                         />
                                                                                                                     </div>
                                                                                                                 </div>
@@ -828,27 +703,27 @@
                                                                                                                             <span
                                                                                                                                 class="s_website_form_label_content"
                                                                                                                             >
-                                                                                                                                Kebele</span>
-                                                                                                                            <span class="s_website_form_mark">
-                                                                                                                                *</span>
+                                                                                                                                Block
+                                                                                                                            </span>
+                                                                                                                            <span class="s_website_form_mark">*</span>
                                                                                                                         </label>
                                                                                                                         <div class="row">
                                                                                                                             <div class="col">
                                                                                                                                 <select
-                                                                                                                                    id="kebele_selection"
+                                                                                                                                    id="block_selection"
                                                                                                                                     class="form-select"
-                                                                                                                                    name="kebele"
+                                                                                                                                    name="block"
                                                                                                                                     onchange="validateElement(this)"
                                                                                                                                     required="required"
                                                                                                                                 >
                                                                                                                                     <option value="">Select</option>
                                                                                                                                     <t
-                                                                                                                                        t-foreach="kebele"
+                                                                                                                                        t-foreach="block"
                                                                                                                                         t-as="option"
                                                                                                                                     >
                                                                                                                                         <option
                                                                                                                                             t-att-value="option.id"
-                                                                                                                                            t-att-selected="option.id == beneficiary.kebele.id"
+                                                                                                                                            t-att-selected="option.id == beneficiary.block.id"
                                                                                                                                         >
                                                                                                                                             <t t-esc="option.name" />
                                                                                                                                         </option>
@@ -860,7 +735,7 @@
                                                                                                                 </div>
                                                                                                                 <div
                                                                                                                     class="col-lg-4"
-                                                                                                                    id="otherKebeleField"
+                                                                                                                    id="otherBlockField"
                                                                                                                     style="display: none;"
                                                                                                                 >
                                                                                                                     <div class="s_website_form_field lmargin-input">
@@ -869,15 +744,15 @@
                                                                                                                                 class="s_website_form_label_content"
                                                                                                                                 style="color: #666666;"
                                                                                                                             >
-                                                                                                                                Please Specify the Kebele
+                                                                                                                                Please Specify the Block
                                                                                                                             </span>
                                                                                                                         </label>
                                                                                                                         <input
                                                                                                                             type="text"
                                                                                                                             class="form-control"
-                                                                                                                            name="other_kebele"
+                                                                                                                            name="other_block"
                                                                                                                             placeholder="Please specify"
-                                                                                                                            t-att-value="other_kebele"
+                                                                                                                            t-att-value="other_block"
                                                                                                                         />
                                                                                                                     </div>
                                                                                                                 </div>

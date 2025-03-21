@@ -42,8 +42,8 @@ def process_many2many_field(self, model_name, field_value):
 
 
 def process_phone_ids(self, json_data):
-    # Fetch the country ID for Ethiopia
-    ethiopia_country_id = self.env["res.country"].search([("name", "=", "Ethiopia")], limit=1).id
+    # Fetch the country ID for India
+    india_country_id = self.env["res.country"].search([("name", "=", "India")], limit=1).id
     json_data["phone_number_ids"] = [
         (
             0,
@@ -51,7 +51,7 @@ def process_phone_ids(self, json_data):
             {
                 "phone_no": "+" + phone.get("phone_no"),
                 "phone_type": phone.get("phone_type"),
-                "country_id": ethiopia_country_id,
+                "country_id": india_country_id,
             },
         )
         for phone in json_data["phone_ids"]
@@ -191,26 +191,19 @@ def process_basic_information(self, individual, vals, other_json):
         else:
             vals["region"] = region_id
 
-    zone_id = process_many2one_field(self, "g2p.zone", individual.get("zone"))
-    if zone_id:
-        if zone_id == "other":
-            other_json["Zone"] = individual.get("other_zone")
+    district_id = process_many2one_field(self, "g2p.district", individual.get("district"))
+    if district_id:
+        if district_id == "other":
+            other_json["District"] = individual.get("other_district")
         else:
-            vals["zone"] = zone_id
+            vals["district"] = district_id
 
-    woreda_id = process_many2one_field(self, "g2p.woreda", individual.get("woreda"))
-    if woreda_id:
-        if woreda_id == "other":
-            other_json["Woreda"] = individual.get("other_woreda")
+    block_id = process_many2one_field(self, "g2p.block", individual.get("block"))
+    if block_id:
+        if block_id == "other":
+            other_json["Block"] = individual.get("other_block")
         else:
-            vals["woreda"] = woreda_id
-
-    kebele_id = process_many2one_field(self, "g2p.kebele", individual.get("kebele"))
-    if kebele_id:
-        if kebele_id == "other":
-            other_json["Kebele"] = individual.get("other_kebele")
-        else:
-            vals["kebele"] = kebele_id
+            vals["block"] = block_id
 
     language_id = process_many2one_field(self, "g2p.lang", individual.get("primary_Language"))
     if language_id:
@@ -220,9 +213,6 @@ def process_basic_information(self, individual, vals, other_json):
     vals["family_name"] = individual.get("family_name")
     vals["gf_name_eng"] = individual.get("gf_name_eng")
     vals["name"] = individual.get("name")
-    vals["first_name_amh"] = individual.get("first_name_amh")
-    vals["family_name_amh"] = individual.get("family_name_amh")
-    vals["gf_name_amh"] = individual.get("gf_name_amh")
     vals["first_name_other"] = individual.get("first_name_other")
     vals["family_name_other"] = individual.get("family_name_other")
     vals["gf_name_other"] = individual.get("gf_name_other")
@@ -400,11 +390,6 @@ def get_member_data(self, member, head, enumerator):
     vals["family_name"] = family_name
     vals["gf_name_eng"] = gf_name_eng
     vals["name"] = member.get("name")
-    if member.get("name_amharic") and member.get("name_amharic").strip():
-        fn, mn, ln = member.get("name_amharic").split()
-        vals["first_name_amh"] = fn
-        vals["family_name_amh"] = mn
-        vals["gf_name_amh"] = ln
     if member.get("name_other") and member.get("name_other").strip():
         fn, mn, ln = member.get("name_other").split()
         vals["first_name_other"] = fn
@@ -418,20 +403,16 @@ def get_member_data(self, member, head, enumerator):
         if region_id != "other":
             vals["region"] = region_id
 
-    zone_id = process_many2one_field(self, "g2p.zone", head.get("zone"))
-    if zone_id:
-        if zone_id != "other":
-            vals["zone"] = zone_id
 
-    woreda_id = process_many2one_field(self, "g2p.woreda", head.get("woreda"))
-    if woreda_id:
-        if woreda_id != "other":
-            vals["woreda"] = woreda_id
+    district_id = process_many2one_field(self, "g2p.district", head.get("district"))
+    if district_id:
+        if district_id != "other":
+            vals["district"] = district_id
 
-    kebele_id = process_many2one_field(self, "g2p.kebele", head.get("kebele"))
-    if kebele_id:
-        if kebele_id != "other":
-            vals["kebele"] = kebele_id
+    block_id = process_many2one_field(self, "g2p.block", head.get("block"))
+    if block_id:
+        if block_id != "other":
+            vals["block"] = block_id
 
     language_id = process_many2one_field(self, "g2p.lang", head.get("primary_Language"))
     if language_id:
@@ -688,9 +669,8 @@ def patched_addl_data(self, mapped_json):
         if not household_found:
             group["name"] = mapped_json.get("name")
             group["region"] = household_head.region.id
-            group["zone"] = household_head.zone.id
-            group["woreda"] = household_head.woreda.id
-            group["kebele"] = household_head.kebele.id
+            group["district"] = household_head.district.id
+            group["block"] = household_head.block.id
             group["enumerator_id"] = enumerator.id
             group_kind = self.env["g2p.group.kind"].sudo().search([("name", "=", "Household")], limit=1)
             if not group_kind:

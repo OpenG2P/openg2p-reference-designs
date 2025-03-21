@@ -86,33 +86,8 @@ class TestG2PFarmer(TransactionCase):
             "Name did not update correctly when only personal names are provided.",
         )
 
-    def test_04_onchange_birthdate_ec_updates_birthdate(self):
-        """Test onchange method for birthdate_ec updates birthdate correctly."""
-        self.farmer.write(
-            {
-                "birthdate_ec": "2016-11-28",
-            }
-        )
-        self.farmer._onchange_birthdate_ec()
-        self.assertEqual(
-            self.farmer.birthdate,
-            datetime.date(2024, 8, 4),
-            "birthdate not updated correctly based on birthdate_ec",
-        )
 
-    def test_05_onchange_birthdate_updates_birthdate_ec(self):
-        """Test onchange method for birthdate_ec updates birthdate correctly."""
-        self.farmer.write(
-            {
-                "birthdate": "2024-8-4",
-            }
-        )
-        self.farmer._onchange_birthdate()
-        self.assertEqual(
-            self.farmer.birthdate_ec, "2016/11/28", "birthdate_ec not updated correctly based on birthdate"
-        )
-
-    def test_06_state_approve_and_reject(self):
+    def test_02_state_approve_and_reject(self):
         self.farmer.state_approve()
         self.assertEqual(self.farmer.state, "approved", "State approval failed")
         self.farmer.state_reject()

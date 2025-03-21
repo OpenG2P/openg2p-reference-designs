@@ -9,31 +9,30 @@
 			</xpath>
 			<xpath expr="//form/sheet" position="before">
 				<header>
-					<button
-                        name="state_approve"
-                        invisible="state!='draft'"
-                        string="Approve"
-                        type="object"
-                        class="btn-success"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
-					<button
-                        name="state_reject"
-                        invisible="state!='draft'"
-                        string="Reject"
-                        type="object"
-                        class="btn-danger"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
-
-					<button
-                        name="set_to_draft"
-                        invisible="state!='rejected'"
-                        string="Set To Draft"
-                        type="object"
-                        class="btn-info"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
+					<button 
+						name="state_approve" 
+						invisible="state!='draft'" 
+						string="Approve" 
+						type="object" 
+						class="btn-success" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
+					<button 
+						name="state_reject" 
+						invisible="state!='draft'" 
+						string="Reject" 
+						type="object" 
+						class="btn-danger" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
+					<button 
+						name="set_to_draft" 
+						invisible="state!='rejected'" 
+						string="Set To Draft" 
+						type="object" 
+						class="btn-info" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
 					<field name="state" widget="statusbar" readonly="1" statusbar_visible="draft,update_requested,approved" />
 				</header>
 			</xpath>
@@ -91,22 +90,13 @@
 					<field name="family_name" placecholder="Last Name(ENG)" />
 					<field name="gf_name_eng" placecholder="G.Father Name(ENG)" />
 				</group>
-				<group name="amharic" string="Amharic">
-					<field name="first_name_amh" placecholder="ስም" />
-					<field name="family_name_amh" placecholder="የአባት ስም" />
-					<field name="gf_name_amh" placecholder="የአያት ስም" />
-				</group>
-				<group
-                    name="other_lang"
-                    string="other"
-                    invisible="primary_Language == 1 or (not first_name_other and not family_name_other and not gf_name_other)"
-                >
+				<group name="other_lang" string="other" invisible="primary_Language == 1 or (not first_name_other and not family_name_other and not gf_name_other)">
 					<field name="first_name_other" />
 					<field name="family_name_other" />
 					<field name="gf_name_other" />
 				</group>
 			</xpath>
-			
+
 			<xpath expr="//div[contains(@class, 'o_row')]" position="attributes">
 				<attribute name="invisible">1</attribute>
 			</xpath>
@@ -151,13 +141,10 @@
 			</xpath>
 			<xpath expr="//field[@name='region']" position="before">
 				<group name="location" colspan="2">
-					<group name="region_zone">
-						<field name="region" />
-						<field name="zone" domain="[('region', '=', region)]" />
-					</group>
-					<group name="woreda_kebele">
-						<field name="woreda" domain="[('zone', '=', zone)]" />
-						<field name="kebele" domain="[('woreda', '=', woreda)]" />
+					<group name="district_block">
+						<field name="region"/>
+						<field name="district" domain="[('region', '=', region)]" />
+						<field name="block" domain="[('district', '=', district)]" />
 					</group>
 				</group>
 				<group colspan="1" name="location_on_map" string="Location">
@@ -169,7 +156,6 @@
 				<group name="primary_personal_info" cols="2" colspan="2">
 					<group name="pp_info_group" string="Birth Information">
 						<field name="birthdate" string="Date Of Birth(GC)" />
-						<field name="birthdate_ec" />
 						<field name="age" />
 						<field name="gender" />
 					</group>
@@ -205,12 +191,7 @@
 						</group>
 						<group name="acesss_to_resources" string="Access To Resources">
 							<field name="access_to_machinery" />
-							<field
-                                name="type_of_machinery"
-                                create="False"
-                                widget="many2many_tags"
-                                invisible="access_to_machinery!='yes'"
-                            />
+							<field name="type_of_machinery" create="False" widget="many2many_tags" invisible="access_to_machinery!='yes'" />
 						</group>
 					</group>
 					<group>
@@ -222,13 +203,7 @@
 						</group>
 						<group name="financial services" string="Financial Services">
 							<field name="has_finance_access" />
-							<field
-                                name="finance_accesses"
-                                colspan="2"
-                                create="False"
-                                widget="many2many_tags"
-                                readonly="has_finance_access!='yes'"
-                            />
+							<field name="finance_accesses" colspan="2" create="False" widget="many2many_tags" readonly="has_finance_access!='yes'" />
 						</group>
 					</group>
 				</page>
@@ -260,7 +235,6 @@
 						<tree editable="bottom">
 							<field name="crop" />
 							<field name="collected_gc" />
-							<field name="collected_ec" placeholder="dd/mm/yyyy" />
 							<field name="season" />
 						</tree>
 					</field>
@@ -275,7 +249,6 @@
 							<field name="number_of_livestock" />
 							<!-- <field name="undisclosed"/> -->
 							<!-- <field name="collected_gc" /> -->
-							<!-- <field name="collected_ec" placeholder="dd/mm/yyyy" /> -->
 							<!-- <field name="season" /> -->
 						</tree>
 					</field>
@@ -302,26 +275,12 @@
 			</xpath>
 			<xpath expr="//field[@name='name']" position="after">
 				<field name="region" />
-				<field name="zone" />
-				<field name="woreda" />
-				<field name="kebele" />
-				<field
-                    name="is_farmer"
-                    string="Farmer"
-                    widget="badge"
-                    decoration-muted="is_farmer == 'no'"
-                    decoration-info="is_farmer == 'yes'"
-                />
+				<field name="district" />
+				<field name="block" />
+				<field name="is_farmer" string="Farmer" widget="badge" decoration-muted="is_farmer == 'no'" decoration-info="is_farmer == 'yes'" />
 				<field name="enumerator_id" />
 				<field name="data_collection_date" />
-				<field
-                    name="state"
-                    widget="badge"
-                    decoration-danger="state == 'rejected'"
-                    decoration-muted="state == 'draft'"
-                    decoration-info="state  == 'update_requested'"
-                    decoration-success="state == 'approved'"
-                />
+				<field name="state" widget="badge" decoration-danger="state == 'rejected'" decoration-muted="state == 'draft'" decoration-info="state  == 'update_requested'" decoration-success="state == 'approved'" />
 			</xpath>
 			<xpath expr="//tree" position="attributes">
 				<attribute name="decoration-success">state == 'approved'</attribute>
@@ -330,24 +289,24 @@
 				<attribute name="decoration-info">state == 'update_requested'</attribute>
 			</xpath>
 			<xpath expr="//field[@name='registration_date']" position="after">
-				<button
-                    title="Approve"
-                    icon="fa-check"
-                    name="state_approve"
-                    type="object"
-                    class="btn btn-success"
-                    invisible="state != 'draft'"
-                    groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                />
-				<button
-                    title="Reject"
-                    icon="fa-times"
-                    name="state_reject"
-                    type="object"
-                    class="btn btn-danger"
-                    invisible="state != 'draft'"
-                    groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                />
+				<button 
+					title="Approve" 
+					icon="fa-check" 
+					name="state_approve" 
+					type="object" 
+					class="btn btn-success" 
+					invisible="state != 'draft'" 
+					groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+				/>
+				<button 
+					title="Reject" 
+					icon="fa-times" 
+					name="state_reject" 
+					type="object" 
+					class="btn btn-danger" 
+					invisible="state != 'draft'" 
+					groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+				/>
 			</xpath>
 		</field>
 	</record>
@@ -358,31 +317,31 @@
 		<field name="arch" type="xml">
 			<xpath expr="//form/sheet" position="before">
 				<header>
-					<button
-                        name="state_approve"
-                        invisible="state!='draft'"
-                        string="Approve"
-                        type="object"
-                        class="btn-success"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
-					<button
-                        name="state_reject"
-                        invisible="state!='draft'"
-                        string="Reject"
-                        type="object"
-                        class="btn-danger"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
+					<button 
+						name="state_approve" 
+						invisible="state!='draft'" 
+						string="Approve" 
+						type="object"
+						class="btn-success" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
+					<button 
+						name="state_reject" 
+						invisible="state!='draft'" 
+						string="Reject" 
+						type="object" 
+						class="btn-danger" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
 
-					<button
-                        name="set_to_draft"
-                        invisible="state!='rejected'"
-                        string="Set To Draft"
-                        type="object"
-                        class="btn-info"
-                        groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                    />
+					<button 
+						name="set_to_draft" 
+						invisible="state!='rejected'" 
+						string="Set To Draft" 
+						type="object" 
+						class="btn-info" 
+						groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+					/>
 					<field name="state" widget="statusbar" readonly="1" statusbar_visible="draft,update_requested,approved" />
 				</header>
 			</xpath>
@@ -401,12 +360,8 @@
 			<xpath expr="//field[@name='registration_date']" position="attributes">
 				<attribute name="invisible">1</attribute>
 			</xpath>
-		<xpath expr="//field[@name='kind']" position="after">
-				<field
-                    name="rejection_reason"
-                    invisible="state!='rejected'"
-                    groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                />
+			<xpath expr="//field[@name='kind']" position="after">
+				<field name="rejection_reason" invisible="state!='rejected'" groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" />
 			</xpath>
 			<xpath expr="//page[@name='relationships']" position="attributes">
 				<attribute name="invisible">1</attribute>
@@ -422,14 +377,13 @@
 			</xpath>
 			<xpath expr="//field[@name='region']" position="after">
 				<field name="region" />
-				<field name="zone" domain="[('region', '=', region)]" />
-				<field name="woreda" domain="[('zone', '=', zone)]" />
-				<field name="kebele" domain="[('woreda', '=', woreda)]" />
+				<field name="district" domain="[('region', '=', region)]" />
+				<field name="block" domain="[('district', '=', district)]" />
 			</xpath>
 			<xpath expr="//div[contains(@class, 'o_row')]" position="attributes">
 				<attribute name="invisible">1</attribute>
 			</xpath>
-			
+
 			<!-- <xpath expr="//page[@name='other']" position="inside">
 				<group>
 					<field name="enumerator_id" readonly="True" />
@@ -461,37 +415,29 @@
 			</xpath>
 			<xpath expr="//field[@name='name']" position="after">
 				<field name="region" />
-				<field name="zone" />
-				<field name="woreda" />
-				<field name="kebele" />
+				<field name="district" />
+				<field name="block" />
 				<field name="enumerator_id" />
 				<field name="data_collection_date" />
-				<field
-                    name="state"
-                    widget="badge"
-                    decoration-danger="state == 'rejected'"
-                    decoration-muted="state == 'draft'"
-                    decoration-info="state  == 'update_requested'"
-                    decoration-success="state == 'approved'"
-                />
-				<button
-                    title="Approve"
-                    icon="fa-check"
-                    name="state_approve"
-                    type="object"
-                    class="btn btn-success"
-                    invisible="state != 'draft'"
-                    groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                />
-				<button
-                    title="Reject"
-                    icon="fa-times"
-                    name="state_reject"
-                    type="object"
-                    class="btn btn-danger"
-                    invisible="state != 'draft'"
-                    groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar"
-                />
+				<field name="state" widget="badge" decoration-danger="state == 'rejected'" decoration-muted="state == 'draft'" decoration-info="state  == 'update_requested'" decoration-success="state == 'approved'" />
+				<button 
+					title="Approve" 
+					icon="fa-check" 
+					name="state_approve" 
+					type="object" 
+					class="btn btn-success" 
+					invisible="state != 'draft'" 
+					groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+				/>
+				<button 
+					title="Reject" 
+					icon="fa-times" 
+					name="state_reject" 
+					type="object" 
+					class="btn btn-danger" 
+					invisible="state != 'draft'" 
+					groups="g2p_farmer.group_data_validator,g2p_registry_base.group_g2p_admin,g2p_registry_base.group_g2p_registrar" 
+				/>
 			</xpath>
 			<xpath expr="//tree" position="attributes">
 				<attribute name="decoration-success">state == 'approved'</attribute>

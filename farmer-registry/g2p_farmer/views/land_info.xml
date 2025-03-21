@@ -31,7 +31,6 @@
                 <field name="partner_id" />
                 <field name="crop" />
                 <field name="collected_gc" />
-                <field name="collected_ec" />
                 <field name="season" />
             </tree>
         </field>
@@ -51,7 +50,6 @@
                 <field name="livestock_type" />
                 <field name="number_of_livestock" />
                 <!-- <field name="collected_gc"/> -->
-                <!-- <field name="collected_ec"/> -->
                 <!-- <field name="season"/>  -->
             </tree>
         </field>

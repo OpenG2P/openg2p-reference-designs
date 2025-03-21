@@ -1,0 +1,3189 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="district_kupwara_01001" model="g2p.district">
+        <field name="code">IN01001</field>
+        <field name="name">Kupwara</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_badgam_01002" model="g2p.district">
+        <field name="code">IN01002</field>
+        <field name="name">Badgam</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_leh_01003" model="g2p.district">
+        <field name="code">IN01003</field>
+        <field name="name">Leh (Ladakh)</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_kargil_01004" model="g2p.district">
+        <field name="code">IN01004</field>
+        <field name="name">Kargil</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_punch_01005" model="g2p.district">
+        <field name="code">IN01005</field>
+        <field name="name">Punch</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_rajouri_01006" model="g2p.district">
+        <field name="code">IN01006</field>
+        <field name="name">Rajouri</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_kathua_01007" model="g2p.district">
+        <field name="code">IN01007</field>
+        <field name="name">Kathua</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_baramula_01008" model="g2p.district">
+        <field name="code">IN01008</field>
+        <field name="name">Baramula</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_bandipore_01009" model="g2p.district">
+        <field name="code">IN01009</field>
+        <field name="name">Bandipore</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_srinagar_01010" model="g2p.district">
+        <field name="code">IN01010</field>
+        <field name="name">Srinagar</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_ganderbal_01011" model="g2p.district">
+        <field name="code">IN01011</field>
+        <field name="name">Ganderbal</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_pulwama_01012" model="g2p.district">
+        <field name="code">IN01012</field>
+        <field name="name">Pulwama</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_shupiyan_01013" model="g2p.district">
+        <field name="code">IN01013</field>
+        <field name="name">Shupiyan</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_anantnag_01014" model="g2p.district">
+        <field name="code">IN01014</field>
+        <field name="name">Anantnag</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_kulgam_01015" model="g2p.district">
+        <field name="code">IN01015</field>
+        <field name="name">Kulgam</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_doda_01016" model="g2p.district">
+        <field name="code">IN01016</field>
+        <field name="name">Doda</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_ramban_01017" model="g2p.district">
+        <field name="code">IN01017</field>
+        <field name="name">Ramban</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_kishtwar_01018" model="g2p.district">
+        <field name="code">IN01018</field>
+        <field name="name">Kishtwar</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_udhampur_01019" model="g2p.district">
+        <field name="code">IN01019</field>
+        <field name="name">Udhampur</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_reasi_01020" model="g2p.district">
+        <field name="code">IN01020</field>
+        <field name="name">Reasi</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_jammu_01021" model="g2p.district">
+        <field name="code">IN01021</field>
+        <field name="name">Jammu</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_samba_01022" model="g2p.district">
+        <field name="code">IN01022</field>
+        <field name="name">Samba</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+    <record id="district_pok_01099" model="g2p.district">
+        <field name="code">IN01099</field>
+        <field name="name">POK</field>
+        <field name="region" ref="g2p_farmer.region_jammu_and_kashmir_01" />
+    </record>
+
+
+
+    <record id="district_chamba_02001" model="g2p.district">
+        <field name="code">IN02001</field>
+        <field name="name">Chamba</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_kangra_02002" model="g2p.district">
+        <field name="code">IN02002</field>
+        <field name="name">Kangra</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_lahul_spiti_02003" model="g2p.district">
+        <field name="code">IN02003</field>
+        <field name="name">Lahul and Spiti</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_kullu_02004" model="g2p.district">
+        <field name="code">IN02004</field>
+        <field name="name">Kullu</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_mandi_02005" model="g2p.district">
+        <field name="code">IN02005</field>
+        <field name="name">Mandi</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_hamirpur_02006" model="g2p.district">
+        <field name="code">IN02006</field>
+        <field name="name">Hamirpur</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_una_02007" model="g2p.district">
+        <field name="code">IN02007</field>
+        <field name="name">Una</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_bilaspur_02008" model="g2p.district">
+        <field name="code">IN02008</field>
+        <field name="name">Bilaspur</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_solan_02009" model="g2p.district">
+        <field name="code">IN02009</field>
+        <field name="name">Solan</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_sirmaur_02010" model="g2p.district">
+        <field name="code">IN02010</field>
+        <field name="name">Sirmaur</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_shimla_02011" model="g2p.district">
+        <field name="code">IN02011</field>
+        <field name="name">Shimla</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+    <record id="district_kinnaur_02012" model="g2p.district">
+        <field name="code">IN02012</field>
+        <field name="name">Kinnaur</field>
+        <field name="region" ref="g2p_farmer.region_himachal_pradesh_02" />
+    </record>
+
+
+    <record id="district_gurdaspur_03001" model="g2p.district">
+        <field name="code">IN03001</field>
+        <field name="name">Gurdaspur</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_kapurthala_03002" model="g2p.district">
+        <field name="code">IN03002</field>
+        <field name="name">Kapurthala</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_jalandhar_03003" model="g2p.district">
+        <field name="code">IN03003</field>
+        <field name="name">Jalandhar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_hoshiarpur_03004" model="g2p.district">
+        <field name="code">IN03004</field>
+        <field name="name">Hoshiarpur</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_shahid_bhagat_singh_nagar_03005" model="g2p.district">
+        <field name="code">IN03005</field>
+        <field name="name">Shahid Bhagat Singh Nagar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_fatehgarh_sahib_03006" model="g2p.district">
+        <field name="code">IN03006</field>
+        <field name="name">Fatehgarh Sahib</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_ludhiana_03007" model="g2p.district">
+        <field name="code">IN03007</field>
+        <field name="name">Ludhiana</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_moga_03008" model="g2p.district">
+        <field name="code">IN03008</field>
+        <field name="name">Moga</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_firozpur_03009" model="g2p.district">
+        <field name="code">IN03009</field>
+        <field name="name">Firozpur</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_muktsar_03010" model="g2p.district">
+        <field name="code">IN03010</field>
+        <field name="name">Muktsar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_faridkot_03011" model="g2p.district">
+        <field name="code">IN03011</field>
+        <field name="name">Faridkot</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_bathinda_03012" model="g2p.district">
+        <field name="code">IN03012</field>
+        <field name="name">Bathinda</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_mansa_03013" model="g2p.district">
+        <field name="code">IN03013</field>
+        <field name="name">Mansa</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_patiala_03014" model="g2p.district">
+        <field name="code">IN03014</field>
+        <field name="name">Patiala</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_amritsar_03015" model="g2p.district">
+        <field name="code">IN03015</field>
+        <field name="name">Amritsar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_tarn_taran_03016" model="g2p.district">
+        <field name="code">IN03016</field>
+        <field name="name">Tarn-Taran</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_rupnagar_03017" model="g2p.district">
+        <field name="code">IN03017</field>
+        <field name="name">Rupnagar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_sahibzada_ajit_singh_nagar_03018" model="g2p.district">
+        <field name="code">IN03018</field>
+        <field name="name">Sahibzada Ajit Singh Nagar</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_sangrur_03019" model="g2p.district">
+        <field name="code">IN03019</field>
+        <field name="name">Sangrur</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+    <record id="district_barnala_03020" model="g2p.district">
+        <field name="code">IN03020</field>
+        <field name="name">Barnala</field>
+        <field name="region" ref="g2p_farmer.region_punjab_03" />
+    </record>
+
+
+
+    <record id="district_uttarkashi_05001" model="g2p.district">
+        <field name="code">IN05001</field>
+        <field name="name">Uttarkashi</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_chamoli_05002" model="g2p.district">
+        <field name="code">IN05002</field>
+        <field name="name">Chamoli</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_rudraprayag_05003" model="g2p.district">
+        <field name="code">IN05003</field>
+        <field name="name">Rudraprayag</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_tehri_garhwal_05004" model="g2p.district">
+        <field name="code">IN05004</field>
+        <field name="name">Tehri Garhwal</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_dehradun_05005" model="g2p.district">
+        <field name="code">IN05005</field>
+        <field name="name">Dehradun</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_garhwal_05006" model="g2p.district">
+        <field name="code">IN05006</field>
+        <field name="name">Garhwal</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_pithoragarh_05007" model="g2p.district">
+        <field name="code">IN05007</field>
+        <field name="name">Pithoragarh</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_bageshwar_05008" model="g2p.district">
+        <field name="code">IN05008</field>
+        <field name="name">Bageshwar</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_almora_05009" model="g2p.district">
+        <field name="code">IN05009</field>
+        <field name="name">Almora</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_champawat_05010" model="g2p.district">
+        <field name="code">IN05010</field>
+        <field name="name">Champawat</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_nainital_05011" model="g2p.district">
+        <field name="code">IN05011</field>
+        <field name="name">Nainital</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_udham_singh_nagar_05012" model="g2p.district">
+        <field name="code">IN05012</field>
+        <field name="name">Udham Singh Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+    <record id="district_hardwar_05013" model="g2p.district">
+        <field name="code">IN05013</field>
+        <field name="name">Hardwar</field>
+        <field name="region" ref="g2p_farmer.region_uttarakhand_05" />
+    </record>
+
+
+
+    <record id="district_panchkula_06001" model="g2p.district">
+        <field name="code">IN06001</field>
+        <field name="name">Panchkula</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_ambala_06002" model="g2p.district">
+        <field name="code">IN06002</field>
+        <field name="name">Ambala</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_yamunanagar_06003" model="g2p.district">
+        <field name="code">IN06003</field>
+        <field name="name">Yamunanagar</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_kurukshetra_06004" model="g2p.district">
+        <field name="code">IN06004</field>
+        <field name="name">Kurukshetra</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_kaithal_06005" model="g2p.district">
+        <field name="code">IN06005</field>
+        <field name="name">Kaithal</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_karnal_06006" model="g2p.district">
+        <field name="code">IN06006</field>
+        <field name="name">Karnal</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_panipat_06007" model="g2p.district">
+        <field name="code">IN06007</field>
+        <field name="name">Panipat</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_sonipat_06008" model="g2p.district">
+        <field name="code">IN06008</field>
+        <field name="name">Sonipat</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_jind_06009" model="g2p.district">
+        <field name="code">IN06009</field>
+        <field name="name">Jind</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_fatehabad_06010" model="g2p.district">
+        <field name="code">IN06010</field>
+        <field name="name">Fatehabad</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_sirsa_06011" model="g2p.district">
+        <field name="code">IN06011</field>
+        <field name="name">Sirsa</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_hisar_06012" model="g2p.district">
+        <field name="code">IN06012</field>
+        <field name="name">Hisar</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_bhiwani_06013" model="g2p.district">
+        <field name="code">IN06013</field>
+        <field name="name">Bhiwani</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_rohtak_06014" model="g2p.district">
+        <field name="code">IN06014</field>
+        <field name="name">Rohtak</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_jhajjar_06015" model="g2p.district">
+        <field name="code">IN06015</field>
+        <field name="name">Jhajjar</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_mahendragarh_06016" model="g2p.district">
+        <field name="code">IN06016</field>
+        <field name="name">Mahendragarh</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_rewari_06017" model="g2p.district">
+        <field name="code">IN06017</field>
+        <field name="name">Rewari</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_gurgaon_06018" model="g2p.district">
+        <field name="code">IN06018</field>
+        <field name="name">Gurgaon</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_mewat_06019" model="g2p.district">
+        <field name="code">IN06019</field>
+        <field name="name">Mewat</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_faridabad_06020" model="g2p.district">
+        <field name="code">IN06020</field>
+        <field name="name">Faridabad</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+    <record id="district_palwal_06021" model="g2p.district">
+        <field name="code">IN06021</field>
+        <field name="name">Palwal</field>
+        <field name="region" ref="g2p_farmer.region_haryana_06" />
+    </record>
+
+
+
+    <record id="district_ganganagar_08001" model="g2p.district">
+        <field name="code">IN08001</field>
+        <field name="name">Ganganagar</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_hanumangarh_08002" model="g2p.district">
+        <field name="code">IN08002</field>
+        <field name="name">Hanumangarh</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_bikaner_08003" model="g2p.district">
+        <field name="code">IN08003</field>
+        <field name="name">Bikaner</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_churu_08004" model="g2p.district">
+        <field name="code">IN08004</field>
+        <field name="name">Churu</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jhunjhunun_08005" model="g2p.district">
+        <field name="code">IN08005</field>
+        <field name="name">Jhunjhunun</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_alwar_08006" model="g2p.district">
+        <field name="code">IN08006</field>
+        <field name="name">Alwar</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_bharatpur_08007" model="g2p.district">
+        <field name="code">IN08007</field>
+        <field name="name">Bharatpur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_dhaulpur_08008" model="g2p.district">
+        <field name="code">IN08008</field>
+        <field name="name">Dhaulpur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_karauli_08009" model="g2p.district">
+        <field name="code">IN08009</field>
+        <field name="name">Karauli</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_sawai_madhopur_08010" model="g2p.district">
+        <field name="code">IN08010</field>
+        <field name="name">Sawai Madhopur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_dausa_08011" model="g2p.district">
+        <field name="code">IN08011</field>
+        <field name="name">Dausa</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jaipur_08012" model="g2p.district">
+        <field name="code">IN08012</field>
+        <field name="name">Jaipur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_sikar_08013" model="g2p.district">
+        <field name="code">IN08013</field>
+        <field name="name">Sikar</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_nagaur_08014" model="g2p.district">
+        <field name="code">IN08014</field>
+        <field name="name">Nagaur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jodhpur_08015" model="g2p.district">
+        <field name="code">IN08015</field>
+        <field name="name">Jodhpur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jaisalmer_08016" model="g2p.district">
+        <field name="code">IN08016</field>
+        <field name="name">Jaisalmer</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_barmer_08017" model="g2p.district">
+        <field name="code">IN08017</field>
+        <field name="name">Barmer</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jalor_08018" model="g2p.district">
+        <field name="code">IN08018</field>
+        <field name="name">Jalor</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_sirohi_08019" model="g2p.district">
+        <field name="code">IN08019</field>
+        <field name="name">Sirohi</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_pali_08020" model="g2p.district">
+        <field name="code">IN08020</field>
+        <field name="name">Pali</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_ajmer_08021" model="g2p.district">
+        <field name="code">IN08021</field>
+        <field name="name">Ajmer</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_tonk_08022" model="g2p.district">
+        <field name="code">IN08022</field>
+        <field name="name">Tonk</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_bundi_08023" model="g2p.district">
+        <field name="code">IN08023</field>
+        <field name="name">Bundi</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_bhilwara_08024" model="g2p.district">
+        <field name="code">IN08024</field>
+        <field name="name">Bhilwara</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_rajsamand_08025" model="g2p.district">
+        <field name="code">IN08025</field>
+        <field name="name">Rajsamand</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_dungarpur_08026" model="g2p.district">
+        <field name="code">IN08026</field>
+        <field name="name">Dungarpur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_banswara_08027" model="g2p.district">
+        <field name="code">IN08027</field>
+        <field name="name">Banswara</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_chittaurgarh_08028" model="g2p.district">
+        <field name="code">IN08028</field>
+        <field name="name">Chittaurgarh</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_kota_08029" model="g2p.district">
+        <field name="code">IN08029</field>
+        <field name="name">Kota</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_baran_08030" model="g2p.district">
+        <field name="code">IN08030</field>
+        <field name="name">Baran</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_jhalawar_08031" model="g2p.district">
+        <field name="code">IN08031</field>
+        <field name="name">Jhalawar</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_udaipur_08032" model="g2p.district">
+        <field name="code">IN08032</field>
+        <field name="name">Udaipur</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+    <record id="district_pratapgarh_08033" model="g2p.district">
+        <field name="code">IN08033</field>
+        <field name="name">Pratapgarh</field>
+        <field name="region" ref="g2p_farmer.region_rajasthan_08" />
+    </record>
+
+
+
+    <record id="district_saharanpur_09001" model="g2p.district">
+        <field name="code">IN09001</field>
+        <field name="name">Saharanpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_muzaffarnagar_09002" model="g2p.district">
+        <field name="code">IN09002</field>
+        <field name="name">Muzaffarnagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_bijnor_09003" model="g2p.district">
+        <field name="code">IN09003</field>
+        <field name="name">Bijnor</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_moradabad_09004" model="g2p.district">
+        <field name="code">IN09004</field>
+        <field name="name">Moradabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_rampur_09005" model="g2p.district">
+        <field name="code">IN09005</field>
+        <field name="name">Rampur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_jyotiba_phule_nagar_09006" model="g2p.district">
+        <field name="code">IN09006</field>
+        <field name="name">Jyotiba Phule Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_meerut_09007" model="g2p.district">
+        <field name="code">IN09007</field>
+        <field name="name">Meerut</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_baghpat_09008" model="g2p.district">
+        <field name="code">IN09008</field>
+        <field name="name">Baghpat</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_ghaziabad_09009" model="g2p.district">
+        <field name="code">IN09009</field>
+        <field name="name">Ghaziabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_gautam_buddha_nagar_09010" model="g2p.district">
+        <field name="code">IN09010</field>
+        <field name="name">Gautam Buddha Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_bulandshahar_09011" model="g2p.district">
+        <field name="code">IN09011</field>
+        <field name="name">Bulandshahar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_aligarh_09012" model="g2p.district">
+        <field name="code">IN09012</field>
+        <field name="name">Aligarh</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mahamaya_nagar_09013" model="g2p.district">
+        <field name="code">IN09013</field>
+        <field name="name">Mahamaya Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mathura_09014" model="g2p.district">
+        <field name="code">IN09014</field>
+        <field name="name">Mathura</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_agra_09015" model="g2p.district">
+        <field name="code">IN09015</field>
+        <field name="name">Agra</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_firozabad_09016" model="g2p.district">
+        <field name="code">IN09016</field>
+        <field name="name">Firozabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mainpuri_09017" model="g2p.district">
+        <field name="code">IN09017</field>
+        <field name="name">Mainpuri</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_budaun_09018" model="g2p.district">
+        <field name="code">IN09018</field>
+        <field name="name">Budaun</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_bareilly_09019" model="g2p.district">
+        <field name="code">IN09019</field>
+        <field name="name">Bareilly</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_pilibhit_09020" model="g2p.district">
+        <field name="code">IN09020</field>
+        <field name="name">Pilibhit</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_shahjahanpur_09021" model="g2p.district">
+        <field name="code">IN09021</field>
+        <field name="name">Shahjahanpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kheri_09022" model="g2p.district">
+        <field name="code">IN09022</field>
+        <field name="name">Kheri</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_sitapur_09023" model="g2p.district">
+        <field name="code">IN09023</field>
+        <field name="name">Sitapur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_hardoi_09024" model="g2p.district">
+        <field name="code">IN09024</field>
+        <field name="name">Hardoi</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_unnao_09025" model="g2p.district">
+        <field name="code">IN09025</field>
+        <field name="name">Unnao</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_lucknow_09026" model="g2p.district">
+        <field name="code">IN09026</field>
+        <field name="name">Lucknow</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_rae_bareli_09027" model="g2p.district">
+        <field name="code">IN09027</field>
+        <field name="name">Rae Bareli</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_farrukhabad_09028" model="g2p.district">
+        <field name="code">IN09028</field>
+        <field name="name">Farrukhabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kannauj_09029" model="g2p.district">
+        <field name="code">IN09029</field>
+        <field name="name">Kannauj</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_etawah_09030" model="g2p.district">
+        <field name="code">IN09030</field>
+        <field name="name">Etawah</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_auriya_09031" model="g2p.district">
+        <field name="code">IN09031</field>
+        <field name="name">Auraiya</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kanpur_dehat_09032" model="g2p.district">
+        <field name="code">IN09032</field>
+        <field name="name">Kanpur Dehat</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kanpur_nagar_09033" model="g2p.district">
+        <field name="code">IN09033</field>
+        <field name="name">Kanpur Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_jalaun_09034" model="g2p.district">
+        <field name="code">IN09034</field>
+        <field name="name">Jalaun</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_jhansi_09035" model="g2p.district">
+        <field name="code">IN09035</field>
+        <field name="name">Jhansi</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+
+
+
+    <record id="district_lalitput_09036" model="g2p.district">
+        <field name="code">IN09036</field>
+        <field name="name">Lalitput</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_hamirpur_09037" model="g2p.district">
+        <field name="code">IN09037</field>
+        <field name="name">Hamirpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mahobo_09038" model="g2p.district">
+        <field name="code">IN09038</field>
+        <field name="name">Mahoba</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_banda_09039" model="g2p.district">
+        <field name="code">IN09039</field>
+        <field name="name">Banda</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_chitrakoot_09040" model="g2p.district">
+        <field name="code">IN09040</field>
+        <field name="name">Chitrakoot</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_fatehpur_09041" model="g2p.district">
+        <field name="code">IN09041</field>
+        <field name="name">Fatehpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_pratapgarh_09042" model="g2p.district">
+        <field name="code">IN09042</field>
+        <field name="name">Pratapgarh</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kaushambi_09043" model="g2p.district">
+        <field name="code">IN09043</field>
+        <field name="name">Kaushambi</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_allahabad_09044" model="g2p.district">
+        <field name="code">IN09044</field>
+        <field name="name">Allahabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_bara_banki_09045" model="g2p.district">
+        <field name="code">IN09045</field>
+        <field name="name">Bara Banki</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_faizabad_09046" model="g2p.district">
+        <field name="code">IN09046</field>
+        <field name="name">Faizabad</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_ambedkar_nagar_09047" model="g2p.district">
+        <field name="code">IN09047</field>
+        <field name="name">Ambedkar Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_sultanpur_09048" model="g2p.district">
+        <field name="code">IN09048</field>
+        <field name="name">Sultanpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_bahraich_09049" model="g2p.district">
+        <field name="code">IN09049</field>
+        <field name="name">Bahraich</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_shrawasti_09050" model="g2p.district">
+        <field name="code">IN09050</field>
+        <field name="name">Shrawasti</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_balrampur_09051" model="g2p.district">
+        <field name="code">IN09051</field>
+        <field name="name">Balrampur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_gonda_09052" model="g2p.district">
+        <field name="code">IN09052</field>
+        <field name="name">Gonda</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_siddharthnagar_09053" model="g2p.district">
+        <field name="code">IN09053</field>
+        <field name="name">Siddharthnagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_basti_09054" model="g2p.district">
+        <field name="code">IN09054</field>
+        <field name="name">Basti</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_sani_kabir_nagar_09055" model="g2p.district">
+        <field name="code">IN09055</field>
+        <field name="name">Sani Kabir Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mahrajganj_09056" model="g2p.district">
+        <field name="code">IN09056</field>
+        <field name="name">Mahrajganj</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_gorakhpur_09057" model="g2p.district">
+        <field name="code">IN09057</field>
+        <field name="name">Gorakhpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kushinagar_09058" model="g2p.district">
+        <field name="code">IN09058</field>
+        <field name="name">Kushinagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_deoria_09059" model="g2p.district">
+        <field name="code">IN09059</field>
+        <field name="name">Deoria</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_azamgarh_09060" model="g2p.district">
+        <field name="code">IN09060</field>
+        <field name="name">Azamgarh</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mau_09061" model="g2p.district">
+        <field name="code">IN09061</field>
+        <field name="name">Mau</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_ballia_09062" model="g2p.district">
+        <field name="code">IN09062</field>
+        <field name="name">Ballia</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_jaunpur_09063" model="g2p.district">
+        <field name="code">IN09063</field>
+        <field name="name">Jaunpur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_ghazipur_09064" model="g2p.district">
+        <field name="code">IN09064</field>
+        <field name="name">Ghazipur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_chandauli_09065" model="g2p.district">
+        <field name="code">IN09065</field>
+        <field name="name">Chandauli</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_varanasi_09066" model="g2p.district">
+        <field name="code">IN09066</field>
+        <field name="name">Varanasi</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_sant_ravidas_nagar_09067" model="g2p.district">
+        <field name="code">IN09067</field>
+        <field name="name">Sant Ravidas Nagar (Bhadohi)</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_mirzapur_09068" model="g2p.district">
+        <field name="code">IN09068</field>
+        <field name="name">Mirzapur</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_sonbhadra_09069" model="g2p.district">
+        <field name="code">IN09069</field>
+        <field name="name">Sonbhadra</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_etah_09070" model="g2p.district">
+        <field name="code">IN09070</field>
+        <field name="name">Etah</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+    <record id="district_kanshiram_nagar_09071" model="g2p.district">
+        <field name="code">IN09071</field>
+        <field name="name">Kanshiram Nagar</field>
+        <field name="region" ref="g2p_farmer.region_uttar_pradesh_09" />
+    </record>
+
+
+
+    <record id="district_pashchim_champaran_10001" model="g2p.district">
+        <field name="code">IN10001</field>
+        <field name="name">Pashchim Champaran</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_purba_champaran_10002" model="g2p.district">
+        <field name="code">IN10002</field>
+        <field name="name">Purba Champaran</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_sheohar_10003" model="g2p.district">
+        <field name="code">IN10003</field>
+        <field name="name">Sheohar</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_sitamarhi_10004" model="g2p.district">
+        <field name="code">IN10004</field>
+        <field name="name">Sitamarhi</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_madhubani_10005" model="g2p.district">
+        <field name="code">IN10005</field>
+        <field name="name">Madhubani</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_supaul_10006" model="g2p.district">
+        <field name="code">IN10006</field>
+        <field name="name">Supaul</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_araria_10007" model="g2p.district">
+        <field name="code">IN10007</field>
+        <field name="name">Araria</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_kishanganj_10008" model="g2p.district">
+        <field name="code">IN10008</field>
+        <field name="name">Kishanganj</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_purnia_10009" model="g2p.district">
+        <field name="code">IN10009</field>
+        <field name="name">Purnia</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_katihar_10010" model="g2p.district">
+        <field name="code">IN10010</field>
+        <field name="name">Katihar</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_madhepura_10011" model="g2p.district">
+        <field name="code">IN10011</field>
+        <field name="name">Madhepura</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_saharsa_10012" model="g2p.district">
+        <field name="code">IN10012</field>
+        <field name="name">Saharsa</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_darbhanga_10013" model="g2p.district">
+        <field name="code">IN10013</field>
+        <field name="name">Darbhanga</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_muzaffarpur_10014" model="g2p.district">
+        <field name="code">IN10014</field>
+        <field name="name">Muzaffarpur</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_gopalganj_10015" model="g2p.district">
+        <field name="code">IN10015</field>
+        <field name="name">Gopalganj</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_siwan_10016" model="g2p.district">
+        <field name="code">IN10016</field>
+        <field name="name">Siwan</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_saran_10017" model="g2p.district">
+        <field name="code">IN10017</field>
+        <field name="name">Saran</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_vaishali_10018" model="g2p.district">
+        <field name="code">IN10018</field>
+        <field name="name">Vaishali</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_samastipur_10019" model="g2p.district">
+        <field name="code">IN10019</field>
+        <field name="name">Samastipur</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_begusarai_10020" model="g2p.district">
+        <field name="code">IN10020</field>
+        <field name="name">Begusarai</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_khagaria_10021" model="g2p.district">
+        <field name="code">IN10021</field>
+        <field name="name">Khagaria</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_bhagalpur_10022" model="g2p.district">
+        <field name="code">IN10022</field>
+        <field name="name">Bhagalpur</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_banka_10023" model="g2p.district">
+        <field name="code">IN10023</field>
+        <field name="name">Banka</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_munger_10024" model="g2p.district">
+        <field name="code">IN10024</field>
+        <field name="name">Munger</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_lakhisarai_10025" model="g2p.district">
+        <field name="code">IN10025</field>
+        <field name="name">Lakhisarai</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_sheikhpura_10026" model="g2p.district">
+        <field name="code">IN10026</field>
+        <field name="name">Sheikhpura</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_nalanda_10027" model="g2p.district">
+        <field name="code">IN10027</field>
+        <field name="name">Nalanda</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_patna_10028" model="g2p.district">
+        <field name="code">IN10028</field>
+        <field name="name">Patna</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_bhojpur_10029" model="g2p.district">
+        <field name="code">IN10029</field>
+        <field name="name">Bhojpur</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_buxar_10030" model="g2p.district">
+        <field name="code">IN10030</field>
+        <field name="name">Buxar</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_kaimur_10031" model="g2p.district">
+        <field name="code">IN10031</field>
+        <field name="name">Kaimur (Bhabua)</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_rohtas_10032" model="g2p.district">
+        <field name="code">IN10032</field>
+        <field name="name">Rohtas</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_aurangabad_10033" model="g2p.district">
+        <field name="code">IN10033</field>
+        <field name="name">Aurangabad</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_gaya_10034" model="g2p.district">
+        <field name="code">IN10034</field>
+        <field name="name">Gaya</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_nawada_10035" model="g2p.district">
+        <field name="code">IN10035</field>
+        <field name="name">Nawada</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_jamui_10036" model="g2p.district">
+        <field name="code">IN10036</field>
+        <field name="name">Jamui</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_jehanabad_10037" model="g2p.district">
+        <field name="code">IN10037</field>
+        <field name="name">Jehanabad</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+    <record id="district_arwal_10038" model="g2p.district">
+        <field name="code">IN10038</field>
+        <field name="name">Arwal</field>
+        <field name="region" ref="g2p_farmer.region_bihar_10" />
+    </record>
+
+
+
+    <record id="district_north_district_11001" model="g2p.district">
+        <field name="code">IN11001</field>
+        <field name="name">North District</field>
+        <field name="region" ref="g2p_farmer.region_sikkim_11" />
+    </record>
+    <record id="district_west_district_11002" model="g2p.district">
+        <field name="code">IN11002</field>
+        <field name="name">West District</field>
+        <field name="region" ref="g2p_farmer.region_sikkim_11" />
+    </record>
+    <record id="district_south_district_11003" model="g2p.district">
+        <field name="code">IN11003</field>
+        <field name="name">South District</field>
+        <field name="region" ref="g2p_farmer.region_sikkim_11" />
+    </record>
+    <record id="district_east_district_11004" model="g2p.district">
+        <field name="code">IN11004</field>
+        <field name="name">East District</field>
+        <field name="region" ref="g2p_farmer.region_sikkim_11" />
+    </record>
+
+
+
+    <record id="district_tawang_12001" model="g2p.district">
+        <field name="code">IN12001</field>
+        <field name="name">Tawang</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_west_kameng_12002" model="g2p.district">
+        <field name="code">IN12002</field>
+        <field name="name">West Kameng</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_east_kameng_12003" model="g2p.district">
+        <field name="code">IN12003</field>
+        <field name="name">East Kameng</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_papum_pare_12004" model="g2p.district">
+        <field name="code">IN12004</field>
+        <field name="name">Papum Pare</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_upper_subansiri_12005" model="g2p.district">
+        <field name="code">IN12005</field>
+        <field name="name">Upper Subansiri</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_west_siang_12006" model="g2p.district">
+        <field name="code">IN12006</field>
+        <field name="name">West Siang</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_east_siang_12007" model="g2p.district">
+        <field name="code">IN12007</field>
+        <field name="name">East Siang</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_upper_siang_12008" model="g2p.district">
+        <field name="code">IN12008</field>
+        <field name="name">Upper Siang</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_changlang_12009" model="g2p.district">
+        <field name="code">IN12009</field>
+        <field name="name">Changlang</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_tirap_12010" model="g2p.district">
+        <field name="code">IN12010</field>
+        <field name="name">Tirap</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_lower_subansiri_12011" model="g2p.district">
+        <field name="code">IN12011</field>
+        <field name="name">Lower Subansiri</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_kurung_kumey_12012" model="g2p.district">
+        <field name="code">IN12012</field>
+        <field name="name">Kurung Kumey</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_dibang_valley_12013" model="g2p.district">
+        <field name="code">IN12013</field>
+        <field name="name">Dibang Valley</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_lower_dibang_valley_12014" model="g2p.district">
+        <field name="code">IN12014</field>
+        <field name="name">Lower Dibang Valley</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_lohit_12015" model="g2p.district">
+        <field name="code">IN12015</field>
+        <field name="name">Lohit</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+    <record id="district_anjaw_12016" model="g2p.district">
+        <field name="code">IN12016</field>
+        <field name="name">Anjaw</field>
+        <field name="region" ref="g2p_farmer.region_arunachal_pradesh_12" />
+    </record>
+
+
+
+    <record id="district_mon_13001" model="g2p.district">
+        <field name="code">IN13001</field>
+        <field name="name">Mon</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_mokokchung_13002" model="g2p.district">
+        <field name="code">IN13002</field>
+        <field name="name">Mokokchung</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_zunheboto_13003" model="g2p.district">
+        <field name="code">IN13003</field>
+        <field name="name">Zunheboto</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_wokha_13004" model="g2p.district">
+        <field name="code">IN13004</field>
+        <field name="name">Wokha</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_dimapur_13005" model="g2p.district">
+        <field name="code">IN13005</field>
+        <field name="name">Dimapur</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_phek_13006" model="g2p.district">
+        <field name="code">IN13006</field>
+        <field name="name">Phek</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_tuensang_13007" model="g2p.district">
+        <field name="code">IN13007</field>
+        <field name="name">Tuensang</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_longleng_13008" model="g2p.district">
+        <field name="code">IN13008</field>
+        <field name="name">Longleng</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_kiphire_13009" model="g2p.district">
+        <field name="code">IN13009</field>
+        <field name="name">Kiphire</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_kohima_13010" model="g2p.district">
+        <field name="code">IN13010</field>
+        <field name="name">Kohima</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+    <record id="district_peren_13011" model="g2p.district">
+        <field name="code">IN13011</field>
+        <field name="name">Peren</field>
+        <field name="region" ref="g2p_farmer.region_nagaland_13" />
+    </record>
+
+
+
+    <record id="district_senapati_14001" model="g2p.district">
+        <field name="code">IN14001</field>
+        <field name="name">Senapati</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_tamenglong_14002" model="g2p.district">
+        <field name="code">IN14002</field>
+        <field name="name">Tamenglong</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_churachandpur_14003" model="g2p.district">
+        <field name="code">IN14003</field>
+        <field name="name">Churachandpur</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_bishnupur_14004" model="g2p.district">
+        <field name="code">IN14004</field>
+        <field name="name">Bishnupur</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_thoubal_14005" model="g2p.district">
+        <field name="code">IN14005</field>
+        <field name="name">Thoubal</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_imphal_west_14006" model="g2p.district">
+        <field name="code">IN14006</field>
+        <field name="name">Imphal West</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_imphal_east_14007" model="g2p.district">
+        <field name="code">IN14007</field>
+        <field name="name">Imphal East</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_ukhrul_14008" model="g2p.district">
+        <field name="code">IN14008</field>
+        <field name="name">Ukhrul</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+    <record id="district_chandel_14009" model="g2p.district">
+        <field name="code">IN14009</field>
+        <field name="name">Chandel</field>
+        <field name="region" ref="g2p_farmer.region_manipur_14" />
+    </record>
+
+
+
+    <record id="district_mamit_15001" model="g2p.district">
+        <field name="code">IN15001</field>
+        <field name="name">Mamit</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_kolasib_15002" model="g2p.district">
+        <field name="code">IN15002</field>
+        <field name="name">Kolasib</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_aizawl_15003" model="g2p.district">
+        <field name="code">IN15003</field>
+        <field name="name">Aizawl</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_champhai_15004" model="g2p.district">
+        <field name="code">IN15004</field>
+        <field name="name">Champhai</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_serchhip_15005" model="g2p.district">
+        <field name="code">IN15005</field>
+        <field name="name">Sercchip</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_lunglei_15006" model="g2p.district">
+        <field name="code">IN15006</field>
+        <field name="name">Lunglei</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_lawngtlai_15007" model="g2p.district">
+        <field name="code">IN15007</field>
+        <field name="name">Lawngtlai</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+    <record id="district_saiha_15008" model="g2p.district">
+        <field name="code">IN15008</field>
+        <field name="name">Saiha</field>
+        <field name="region" ref="g2p_farmer.region_mizoram_15" />
+    </record>
+
+
+
+    <record id="district_west_tripura_16001" model="g2p.district">
+        <field name="code">IN16001</field>
+        <field name="name">West Tripura</field>
+        <field name="region" ref="g2p_farmer.region_tripura_16" />
+    </record>
+    <record id="district_south_tripura_16002" model="g2p.district">
+        <field name="code">IN16002</field>
+        <field name="name">South Tripura</field>
+        <field name="region" ref="g2p_farmer.region_tripura_16" />
+    </record>
+    <record id="district_dhalai_16003" model="g2p.district">
+        <field name="code">IN16003</field>
+        <field name="name">Dhalai</field>
+        <field name="region" ref="g2p_farmer.region_tripura_16" />
+    </record>
+    <record id="district_north_tripura_16004" model="g2p.district">
+        <field name="code">IN16004</field>
+        <field name="name">North Tripura</field>
+        <field name="region" ref="g2p_farmer.region_tripura_16" />
+    </record>
+
+
+
+    <record id="district_west_garo_hills_17001" model="g2p.district">
+        <field name="code">IN17001</field>
+        <field name="name">West Garo Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_east_garo_hills_17002" model="g2p.district">
+        <field name="code">IN17002</field>
+        <field name="name">East Garo Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_south_garo_hills_17003" model="g2p.district">
+        <field name="code">IN17003</field>
+        <field name="name">South Garo Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_west_khasi_hills_17004" model="g2p.district">
+        <field name="code">IN17004</field>
+        <field name="name">West Khasi Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_ri_bhoi_17005" model="g2p.district">
+        <field name="code">IN17005</field>
+        <field name="name">Ri-Bhoi</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_east_khasi_hills_17006" model="g2p.district">
+        <field name="code">IN17006</field>
+        <field name="name">East Khasi Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+    <record id="district_jaintia_hills_17007" model="g2p.district">
+        <field name="code">IN17007</field>
+        <field name="name">Jaintia Hills</field>
+        <field name="region" ref="g2p_farmer.region_meghalaya_17" />
+    </record>
+
+
+
+    <record id="district_kokrajhar_18001" model="g2p.district">
+        <field name="code">IN18001</field>
+        <field name="name">Kokrajhar</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_dhubri_18002" model="g2p.district">
+        <field name="code">IN18002</field>
+        <field name="name">Dhubri</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_goalpara_18003" model="g2p.district">
+        <field name="code">IN18003</field>
+        <field name="name">Goalpara</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_barpeta_18004" model="g2p.district">
+        <field name="code">IN18004</field>
+        <field name="name">Barpeta</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_morigaon_18005" model="g2p.district">
+        <field name="code">IN18005</field>
+        <field name="name">Morigaon</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_nagaon_18006" model="g2p.district">
+        <field name="code">IN18006</field>
+        <field name="name">Nagaon</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_sonitpur_18007" model="g2p.district">
+        <field name="code">IN18007</field>
+        <field name="name">Sonitpur</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_lakhimpur_18008" model="g2p.district">
+        <field name="code">IN18008</field>
+        <field name="name">Lakhimpur</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_dhemaji_18009" model="g2p.district">
+        <field name="code">IN18009</field>
+        <field name="name">Dhemaji</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_tinsukia_18010" model="g2p.district">
+        <field name="code">IN18010</field>
+        <field name="name">Tinsukia</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_dibrugarh_18011" model="g2p.district">
+        <field name="code">IN18011</field>
+        <field name="name">Dibrugarh</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_sivasagar_18012" model="g2p.district">
+        <field name="code">IN18012</field>
+        <field name="name">Sivasagar</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_jorhat_18013" model="g2p.district">
+        <field name="code">IN18013</field>
+        <field name="name">Jorhat</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_golaghat_18014" model="g2p.district">
+        <field name="code">IN18014</field>
+        <field name="name">Golaghat</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_karbi_anglong_18015" model="g2p.district">
+        <field name="code">IN18015</field>
+        <field name="name">Karbi Anglong</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_dima_hasao_18016" model="g2p.district">
+        <field name="code">IN18016</field>
+        <field name="name">Dima Hasao</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_cachar_18017" model="g2p.district">
+        <field name="code">IN18017</field>
+        <field name="name">Cachar</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_karimganj_18018" model="g2p.district">
+        <field name="code">IN18018</field>
+        <field name="name">Karimganj</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_hailakandi_18019" model="g2p.district">
+        <field name="code">IN18019</field>
+        <field name="name">Hailakandi</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_bongaigaon_18020" model="g2p.district">
+        <field name="code">IN18020</field>
+        <field name="name">Bongaigaon</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_chirang_18021" model="g2p.district">
+        <field name="code">IN18021</field>
+        <field name="name">Chirang</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_kamrup_18022" model="g2p.district">
+        <field name="code">IN18022</field>
+        <field name="name">Kamrup</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_kamrup_metropolitan_18023" model="g2p.district">
+        <field name="code">IN18023</field>
+        <field name="name">Kamrup Metropolitan</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_nalbari_18024" model="g2p.district">
+        <field name="code">IN18024</field>
+        <field name="name">Nalbari</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_baksa_18025" model="g2p.district">
+        <field name="code">IN18025</field>
+        <field name="name">Baksa</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_darrang_18026" model="g2p.district">
+        <field name="code">IN18026</field>
+        <field name="name">Darrang</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+    <record id="district_udalguri_18027" model="g2p.district">
+        <field name="code">IN18027</field>
+        <field name="name">Udalguri</field>
+        <field name="region" ref="g2p_farmer.region_assam_18" />
+    </record>
+
+
+
+    <record id="district_darjiling_19001" model="g2p.district">
+        <field name="code">IN19001</field>
+        <field name="name">Darjiling</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_jalpaiguri_19002" model="g2p.district">
+        <field name="code">IN19002</field>
+        <field name="name">Jalpaiguri</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_koch_bihar_19003" model="g2p.district">
+        <field name="code">IN19003</field>
+        <field name="name">Koch Bihar</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_uttar_dinajpur_19004" model="g2p.district">
+        <field name="code">IN19004</field>
+        <field name="name">Uttar Dinajpur</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_dakshin_dinajpur_19005" model="g2p.district">
+        <field name="code">IN19005</field>
+        <field name="name">Dakshin Dinajpur</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_maldah_19006" model="g2p.district">
+        <field name="code">IN19006</field>
+        <field name="name">Maldah</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_murshidabad_19007" model="g2p.district">
+        <field name="code">IN19007</field>
+        <field name="name">Murshidabad</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_birbhum_19008" model="g2p.district">
+        <field name="code">IN19008</field>
+        <field name="name">Birbhum</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_barddhaman_19009" model="g2p.district">
+        <field name="code">IN19009</field>
+        <field name="name">Barddhaman</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_nadia_19010" model="g2p.district">
+        <field name="code">IN19010</field>
+        <field name="name">Nadia</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_north_twenty_four_parganas_19011" model="g2p.district">
+        <field name="code">IN19011</field>
+        <field name="name">North Twenty Four Parganas</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_hugli_19012" model="g2p.district">
+        <field name="code">IN19012</field>
+        <field name="name">Hugli</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_bankura_19013" model="g2p.district">
+        <field name="code">IN19013</field>
+        <field name="name">Bankura</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_puruliya_19014" model="g2p.district">
+        <field name="code">IN19014</field>
+        <field name="name">Puruliya</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_haora_19015" model="g2p.district">
+        <field name="code">IN19015</field>
+        <field name="name">Haora</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_kolkata_19016" model="g2p.district">
+        <field name="code">IN19016</field>
+        <field name="name">Kolkata</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_south_twenty_four_parganas_19017" model="g2p.district">
+        <field name="code">IN19017</field>
+        <field name="name">South Twenty Four Parganas</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_paschim_medinipur_19018" model="g2p.district">
+        <field name="code">IN19018</field>
+        <field name="name">Paschim Medinipur</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+    <record id="district_purba_medinipur_19019" model="g2p.district">
+        <field name="code">IN19019</field>
+        <field name="name">Purba Medinipur</field>
+        <field name="region" ref="g2p_farmer.region_west_bengal_19" />
+    </record>
+
+
+
+    <record id="district_garhwa_20001" model="g2p.district">
+        <field name="code">IN20001</field>
+        <field name="name">Garhwa</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_chatra_20002" model="g2p.district">
+        <field name="code">IN20002</field>
+        <field name="name">Chatra</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_kodarma_20003" model="g2p.district">
+        <field name="code">IN20003</field>
+        <field name="name">Kodarma</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_giridih_20004" model="g2p.district">
+        <field name="code">IN20004</field>
+        <field name="name">Giridih</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_deoghar_20005" model="g2p.district">
+        <field name="code">IN20005</field>
+        <field name="name">Deoghar</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_godda_20006" model="g2p.district">
+        <field name="code">IN20006</field>
+        <field name="name">Godda</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_sahibganj_20007" model="g2p.district">
+        <field name="code">IN20007</field>
+        <field name="name">Sahibganj</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_pakur_20008" model="g2p.district">
+        <field name="code">IN20008</field>
+        <field name="name">Pakur</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_dhanbad_20009" model="g2p.district">
+        <field name="code">IN20009</field>
+        <field name="name">Dhanbad</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_bokaro_20010" model="g2p.district">
+        <field name="code">IN20010</field>
+        <field name="name">Bokaro</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_lohardaga_20011" model="g2p.district">
+        <field name="code">IN20011</field>
+        <field name="name">Lohardaga</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_purbi_singhbhum_20012" model="g2p.district">
+        <field name="code">IN20012</field>
+        <field name="name">Purbi Singhbhum</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_palamu_20013" model="g2p.district">
+        <field name="code">IN20013</field>
+        <field name="name">Palamu</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_latehar_20014" model="g2p.district">
+        <field name="code">IN20014</field>
+        <field name="name">Latehar</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_hazaribagh_20015" model="g2p.district">
+        <field name="code">IN20015</field>
+        <field name="name">Hazaribagh</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_ramgarh_20016" model="g2p.district">
+        <field name="code">IN20016</field>
+        <field name="name">Ramgarh</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_dumka_20017" model="g2p.district">
+        <field name="code">IN20017</field>
+        <field name="name">Dumka</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_jamtara_20018" model="g2p.district">
+        <field name="code">IN20018</field>
+        <field name="name">Jamtara</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_ranchi_20019" model="g2p.district">
+        <field name="code">IN20019</field>
+        <field name="name">Ranchi</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_khunti_20020" model="g2p.district">
+        <field name="code">IN20020</field>
+        <field name="name">Khunti</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_gumla_20021" model="g2p.district">
+        <field name="code">IN20021</field>
+        <field name="name">Gumla</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_simdega_20022" model="g2p.district">
+        <field name="code">IN20022</field>
+        <field name="name">Simdega</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_pashchimi_singhbhum_20023" model="g2p.district">
+        <field name="code">IN20023</field>
+        <field name="name">Pashchimi Singhbhum</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+    <record id="district_saraikela_kharsawan_20024" model="g2p.district">
+        <field name="code">IN20024</field>
+        <field name="name">Saraikela-Kharsawan</field>
+        <field name="region" ref="g2p_farmer.region_jharkhand_20" />
+    </record>
+
+
+
+    <record id="district_bargarh_21001" model="g2p.district">
+        <field name="code">IN21001</field>
+        <field name="name">Bargarh</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_jharsuguda_21002" model="g2p.district">
+        <field name="code">IN21002</field>
+        <field name="name">Jharsuguda</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_sambalpur_21003" model="g2p.district">
+        <field name="code">IN21003</field>
+        <field name="name">Sambalpur</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_debagarh_21004" model="g2p.district">
+        <field name="code">IN21004</field>
+        <field name="name">Debagarh</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_sundargarh_21005" model="g2p.district">
+        <field name="code">IN21005</field>
+        <field name="name">Sundargarh</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_kendujhar_21006" model="g2p.district">
+        <field name="code">IN21006</field>
+        <field name="name">Kendujhar</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_mayurbhanj_21007" model="g2p.district">
+        <field name="code">IN21007</field>
+        <field name="name">Mayurbhanj</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_baleshwar_21008" model="g2p.district">
+        <field name="code">IN21008</field>
+        <field name="name">Baleshwar</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_bhadrak_21009" model="g2p.district">
+        <field name="code">IN21009</field>
+        <field name="name">Bhadrak</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_kendrapara_21010" model="g2p.district">
+        <field name="code">IN21010</field>
+        <field name="name">Kendrapara</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_jagatsinghapur_21011" model="g2p.district">
+        <field name="code">IN21011</field>
+        <field name="name">Jagatsinghapur</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_cuttack_21012" model="g2p.district">
+        <field name="code">IN21012</field>
+        <field name="name">Cuttack</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_jajapur_21013" model="g2p.district">
+        <field name="code">IN21013</field>
+        <field name="name">Jajapur</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_dhenkanal_21014" model="g2p.district">
+        <field name="code">IN21014</field>
+        <field name="name">Dhenkanal</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_anugul_21015" model="g2p.district">
+        <field name="code">IN21015</field>
+        <field name="name">Anugul</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_nayagarh_21016" model="g2p.district">
+        <field name="code">IN21016</field>
+        <field name="name">Nayagarh</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_khordha_21017" model="g2p.district">
+        <field name="code">IN21017</field>
+        <field name="name">Khordha</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_puri_21018" model="g2p.district">
+        <field name="code">IN21018</field>
+        <field name="name">Puri</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_ganjam_21019" model="g2p.district">
+        <field name="code">IN21019</field>
+        <field name="name">Ganjam</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_gajapati_21020" model="g2p.district">
+        <field name="code">IN21020</field>
+        <field name="name">Gajapati</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_kandhamal_21021" model="g2p.district">
+        <field name="code">IN21021</field>
+        <field name="name">Kandhamal</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_baudh_21022" model="g2p.district">
+        <field name="code">IN21022</field>
+        <field name="name">Baudh</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_subarnapur_21023" model="g2p.district">
+        <field name="code">IN21023</field>
+        <field name="name">Subarnapur</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_balangir_21024" model="g2p.district">
+        <field name="code">IN21024</field>
+        <field name="name">Balangir</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_nuapada_21025" model="g2p.district">
+        <field name="code">IN21025</field>
+        <field name="name">Nuapada</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_kalahandi_21026" model="g2p.district">
+        <field name="code">IN21026</field>
+        <field name="name">Kalahandi</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_rayagada_21027" model="g2p.district">
+        <field name="code">IN21027</field>
+        <field name="name">Rayagada</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_nabarangapur_21028" model="g2p.district">
+        <field name="code">IN21028</field>
+        <field name="name">Nabarangapur</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_koraput_21029" model="g2p.district">
+        <field name="code">IN21029</field>
+        <field name="name">Koraput</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+    <record id="district_malkangiri_21030" model="g2p.district">
+        <field name="code">IN21030</field>
+        <field name="name">Malkangiri</field>
+        <field name="region" ref="g2p_farmer.region_orissa_21" />
+    </record>
+
+
+
+    <record id="district_koriya_22001" model="g2p.district">
+        <field name="code">IN22001</field>
+        <field name="name">Koriya</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_surguja_22002" model="g2p.district">
+        <field name="code">IN22002</field>
+        <field name="name">Surguja</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_jashpur_22003" model="g2p.district">
+        <field name="code">IN22003</field>
+        <field name="name">Jashpur</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_raigarh_22004" model="g2p.district">
+        <field name="code">IN22004</field>
+        <field name="name">Raigarh</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_korba_22005" model="g2p.district">
+        <field name="code">IN22005</field>
+        <field name="name">Korba</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_janjgir_champa_22006" model="g2p.district">
+        <field name="code">IN22006</field>
+        <field name="name">Janjgir-Champa</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_bilaspur_22007" model="g2p.district">
+        <field name="code">IN22007</field>
+        <field name="name">Bilaspur</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_kabeerdham_22008" model="g2p.district">
+        <field name="code">IN22008</field>
+        <field name="name">Kabeerdham</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_rajnandgaon_22009" model="g2p.district">
+        <field name="code">IN22009</field>
+        <field name="name">Rajnandgaon</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_durg_22010" model="g2p.district">
+        <field name="code">IN22010</field>
+        <field name="name">Durg</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_raipur_22011" model="g2p.district">
+        <field name="code">IN22011</field>
+        <field name="name">Raipur</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_mahasamund_22012" model="g2p.district">
+        <field name="code">IN22012</field>
+        <field name="name">Mahasamund</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_dhamtari_22013" model="g2p.district">
+        <field name="code">IN22013</field>
+        <field name="name">Dhamtari</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_uttar_bastar_kanker_22014" model="g2p.district">
+        <field name="code">IN22014</field>
+        <field name="name">Uttar Bastar Kanker</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_baster_22015" model="g2p.district">
+        <field name="code">IN22015</field>
+        <field name="name">Baster</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_narayanpur_22016" model="g2p.district">
+        <field name="code">IN22016</field>
+        <field name="name">Narayanpur</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_dakshin_bastar_dantewada_22017" model="g2p.district">
+        <field name="code">IN22017</field>
+        <field name="name">Dakshin Bastar Dantewada</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+    <record id="district_bijapur_22018" model="g2p.district">
+        <field name="code">IN22018</field>
+        <field name="name">Bijapur</field>
+        <field name="region" ref="g2p_farmer.region_chhattisgarh_22" />
+    </record>
+
+
+
+    <record id="district_sheopur_23001" model="g2p.district">
+        <field name="code">IN23001</field>
+        <field name="name">Sheopur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_morena_23002" model="g2p.district">
+        <field name="code">IN23002</field>
+        <field name="name">Morena</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_bhind_23003" model="g2p.district">
+        <field name="code">IN23003</field>
+        <field name="name">Bhind</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_gwalior_23004" model="g2p.district">
+        <field name="code">IN23004</field>
+        <field name="name">Gwalior</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_datia_23005" model="g2p.district">
+        <field name="code">IN23005</field>
+        <field name="name">Datia</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_shivpuri_23006" model="g2p.district">
+        <field name="code">IN23006</field>
+        <field name="name">Shivpuri</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_tikamgarh_23007" model="g2p.district">
+        <field name="code">IN23007</field>
+        <field name="name">Tikamgarh</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_chhatarpur_23008" model="g2p.district">
+        <field name="code">IN23008</field>
+        <field name="name">Chhatarpur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_panna_23009" model="g2p.district">
+        <field name="code">IN23009</field>
+        <field name="name">Panna</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_sagar_23010" model="g2p.district">
+        <field name="code">IN23010</field>
+        <field name="name">Sagar</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_damoh_23011" model="g2p.district">
+        <field name="code">IN23011</field>
+        <field name="name">Damoh</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_satna_23012" model="g2p.district">
+        <field name="code">IN23012</field>
+        <field name="name">Satna</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_rewa_23013" model="g2p.district">
+        <field name="code">IN23013</field>
+        <field name="name">Rewa</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_umaria_23014" model="g2p.district">
+        <field name="code">IN23014</field>
+        <field name="name">Umaria</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_neemuch_23015" model="g2p.district">
+        <field name="code">IN23015</field>
+        <field name="name">Neemuch</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_mandsaur_23016" model="g2p.district">
+        <field name="code">IN23016</field>
+        <field name="name">Mandsaur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_ratlam_23017" model="g2p.district">
+        <field name="code">IN23017</field>
+        <field name="name">Ratlam</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_ujjain_23018" model="g2p.district">
+        <field name="code">IN23018</field>
+        <field name="name">Ujjain</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_shajapur_23019" model="g2p.district">
+        <field name="code">IN23019</field>
+        <field name="name">Shajapur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_dewas_23020" model="g2p.district">
+        <field name="code">IN23020</field>
+        <field name="name">Dewas</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_dhar_23021" model="g2p.district">
+        <field name="code">IN23021</field>
+        <field name="name">Dhar</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_indore_23022" model="g2p.district">
+        <field name="code">IN23022</field>
+        <field name="name">Indore</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_west_nimar_23023" model="g2p.district">
+        <field name="code">IN23023</field>
+        <field name="name">West Nimar</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_barwani_23024" model="g2p.district">
+        <field name="code">IN23024</field>
+        <field name="name">Barwani</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_rajgarh_23025" model="g2p.district">
+        <field name="code">IN23025</field>
+        <field name="name">Rajgarh</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_vidisha_23026" model="g2p.district">
+        <field name="code">IN23026</field>
+        <field name="name">Vidisha</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_bhopal_23027" model="g2p.district">
+        <field name="code">IN23027</field>
+        <field name="name">Bhopal</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_sehore_23028" model="g2p.district">
+        <field name="code">IN23028</field>
+        <field name="name">Sehore</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_raisen_23029" model="g2p.district">
+        <field name="code">IN23029</field>
+        <field name="name">Raisen</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_betul_23030" model="g2p.district">
+        <field name="code">IN23030</field>
+        <field name="name">Betul</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_harda_23031" model="g2p.district">
+        <field name="code">IN23031</field>
+        <field name="name">Harda</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_hoshangabad_23032" model="g2p.district">
+        <field name="code">IN23032</field>
+        <field name="name">Hoshangabad</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_katni_23033" model="g2p.district">
+        <field name="code">IN23033</field>
+        <field name="name">Katni</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_jabalpur_23034" model="g2p.district">
+        <field name="code">IN23034</field>
+        <field name="name">Jabalpur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_narsimhapur_23035" model="g2p.district">
+        <field name="code">IN23035</field>
+        <field name="name">Narsimhapur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_dindori_23036" model="g2p.district">
+        <field name="code">IN23036</field>
+        <field name="name">Dindori</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_mandla_23037" model="g2p.district">
+        <field name="code">IN23037</field>
+        <field name="name">Mandla</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_chhindwara_23038" model="g2p.district">
+        <field name="code">IN23038</field>
+        <field name="name">Chhindwara</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_seoni_23039" model="g2p.district">
+        <field name="code">IN23039</field>
+        <field name="name">Seoni</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_balaghat_23040" model="g2p.district">
+        <field name="code">IN23040</field>
+        <field name="name">Balaghat</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_guna_23041" model="g2p.district">
+        <field name="code">IN23041</field>
+        <field name="name">Guna</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_ashoknagar_23042" model="g2p.district">
+        <field name="code">IN23042</field>
+        <field name="name">Ashoknagar</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_shahdol_23043" model="g2p.district">
+        <field name="code">IN23043</field>
+        <field name="name">Shahdol</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_anuppur_23044" model="g2p.district">
+        <field name="code">IN23044</field>
+        <field name="name">Anuppur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_sidhi_23045" model="g2p.district">
+        <field name="code">IN23045</field>
+        <field name="name">Sidhi</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_singrauli_23046" model="g2p.district">
+        <field name="code">IN23046</field>
+        <field name="name">Singrauli</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_jhabua_23047" model="g2p.district">
+        <field name="code">IN23047</field>
+        <field name="name">Jhabua</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_alirajpur_23048" model="g2p.district">
+        <field name="code">IN23048</field>
+        <field name="name">Alirajpur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_east_nimar_23049" model="g2p.district">
+        <field name="code">IN23049</field>
+        <field name="name">East Nimar</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+    <record id="district_burhanpur_23050" model="g2p.district">
+        <field name="code">IN23050</field>
+        <field name="name">Burhanpur</field>
+        <field name="region" ref="g2p_farmer.region_madhya_pradesh_23" />
+    </record>
+
+
+
+    <record id="district_kachchh_24001" model="g2p.district">
+        <field name="code">IN24001</field>
+        <field name="name">Kachchh</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_banas_kantha_24002" model="g2p.district">
+        <field name="code">IN24002</field>
+        <field name="name">Banas Kantha</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_patan_24003" model="g2p.district">
+        <field name="code">IN24003</field>
+        <field name="name">Patan</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_mahesana_24004" model="g2p.district">
+        <field name="code">IN24004</field>
+        <field name="name">Mahesana</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_sabar_kantha_24005" model="g2p.district">
+        <field name="code">IN24005</field>
+        <field name="name">Sabar Kantha</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_gandhinagar_24006" model="g2p.district">
+        <field name="code">IN24006</field>
+        <field name="name">Gandhinagar</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_ahmadabad_24007" model="g2p.district">
+        <field name="code">IN24007</field>
+        <field name="name">Ahmadabad</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_surendranagar_24008" model="g2p.district">
+        <field name="code">IN24008</field>
+        <field name="name">Surendranagar</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_rajkot_24009" model="g2p.district">
+        <field name="code">IN24009</field>
+        <field name="name">Rajkot</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_jamnagar_24010" model="g2p.district">
+        <field name="code">IN24010</field>
+        <field name="name">Jamnagar</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_porbandar_24011" model="g2p.district">
+        <field name="code">IN24011</field>
+        <field name="name">Porbandar</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_junagadh_24012" model="g2p.district">
+        <field name="code">IN24012</field>
+        <field name="name">Junagadh</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_amreli_24013" model="g2p.district">
+        <field name="code">IN24013</field>
+        <field name="name">Amreli</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_bhavnagar_24014" model="g2p.district">
+        <field name="code">IN24014</field>
+        <field name="name">Bhavnagar</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_anand_24015" model="g2p.district">
+        <field name="code">IN24015</field>
+        <field name="name">Anand</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_kheda_24016" model="g2p.district">
+        <field name="code">IN24016</field>
+        <field name="name">Kheda</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_panch_mahals_24017" model="g2p.district">
+        <field name="code">IN24017</field>
+        <field name="name">Panch Mahals</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_dohad_24018" model="g2p.district">
+        <field name="code">IN24018</field>
+        <field name="name">Dohad</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_vadodara_24019" model="g2p.district">
+        <field name="code">IN24019</field>
+        <field name="name">Vadodara</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_narmada_24020" model="g2p.district">
+        <field name="code">IN24020</field>
+        <field name="name">Narmada</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_bharuch_24021" model="g2p.district">
+        <field name="code">IN24021</field>
+        <field name="name">Bharuch</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_the_dangs_24022" model="g2p.district">
+        <field name="code">IN24022</field>
+        <field name="name">The Dangs</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_navsari_24023" model="g2p.district">
+        <field name="code">IN24023</field>
+        <field name="name">Navsari</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_valsad_24024" model="g2p.district">
+        <field name="code">IN24024</field>
+        <field name="name">Valsad</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_surat_24025" model="g2p.district">
+        <field name="code">IN24025</field>
+        <field name="name">Surat</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+    <record id="district_tapi_24026" model="g2p.district">
+        <field name="code">IN24026</field>
+        <field name="name">Tapi</field>
+        <field name="region" ref="g2p_farmer.region_gujarat_24" />
+    </record>
+
+
+
+    <record id="district_nandurbar_27001" model="g2p.district">
+        <field name="code">IN27001</field>
+        <field name="name">Nandurbar</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_dhule_27002" model="g2p.district">
+        <field name="code">IN27002</field>
+        <field name="name">Dhule</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_jalgaon_27003" model="g2p.district">
+        <field name="code">IN27003</field>
+        <field name="name">Jalgaon</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_buldana_27004" model="g2p.district">
+        <field name="code">IN27004</field>
+        <field name="name">Buldana</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_akola_27005" model="g2p.district">
+        <field name="code">IN27005</field>
+        <field name="name">Akola</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_washim_27006" model="g2p.district">
+        <field name="code">IN27006</field>
+        <field name="name">Washim</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_amravati_27007" model="g2p.district">
+        <field name="code">IN27007</field>
+        <field name="name">Amravati</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_wardha_27008" model="g2p.district">
+        <field name="code">IN27008</field>
+        <field name="name">Wardha</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_nagpur_27009" model="g2p.district">
+        <field name="code">IN27009</field>
+        <field name="name">Nagpur</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_bhandara_27010" model="g2p.district">
+        <field name="code">IN27010</field>
+        <field name="name">Bhandara</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_gondiya_27011" model="g2p.district">
+        <field name="code">IN27011</field>
+        <field name="name">Gondiya</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_gadchiroli_27012" model="g2p.district">
+        <field name="code">IN27012</field>
+        <field name="name">Gadchiroli</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_chandrapur_27013" model="g2p.district">
+        <field name="code">IN27013</field>
+        <field name="name">Chandrapur</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_yavatmal_27014" model="g2p.district">
+        <field name="code">IN27014</field>
+        <field name="name">Yavatmal</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_nanded_27015" model="g2p.district">
+        <field name="code">IN27015</field>
+        <field name="name">Nanded</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_hingoli_27016" model="g2p.district">
+        <field name="code">IN27016</field>
+        <field name="name">Hingoli</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_parbhani_27017" model="g2p.district">
+        <field name="code">IN27017</field>
+        <field name="name">Parbhani</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_jalna_27018" model="g2p.district">
+        <field name="code">IN27018</field>
+        <field name="name">Jalna</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_aurangabad_27019" model="g2p.district">
+        <field name="code">IN27019</field>
+        <field name="name">Aurangabad</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_nashik_27020" model="g2p.district">
+        <field name="code">IN27020</field>
+        <field name="name">Nashik</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_thane_27021" model="g2p.district">
+        <field name="code">IN27021</field>
+        <field name="name">Thane</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_mumbai_suburban_27022" model="g2p.district">
+        <field name="code">IN27022</field>
+        <field name="name">Mumbai (Suburban)</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_mumbai_27023" model="g2p.district">
+        <field name="code">IN27023</field>
+        <field name="name">Mumbai</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_raigarh_27024" model="g2p.district">
+        <field name="code">IN27024</field>
+        <field name="name">Raigarh</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_pune_27025" model="g2p.district">
+        <field name="code">IN27025</field>
+        <field name="name">Pune</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_ahmadnagar_27026" model="g2p.district">
+        <field name="code">IN27026</field>
+        <field name="name">Ahmadnagar</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_bid_27027" model="g2p.district">
+        <field name="code">IN27027</field>
+        <field name="name">Bid</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_latur_27028" model="g2p.district">
+        <field name="code">IN27028</field>
+        <field name="name">Latur</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_osmanabad_27029" model="g2p.district">
+        <field name="code">IN27029</field>
+        <field name="name">Osmanabad</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_solapur_27030" model="g2p.district">
+        <field name="code">IN27030</field>
+        <field name="name">Solapur</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_satara_27031" model="g2p.district">
+        <field name="code">IN27031</field>
+        <field name="name">Satara</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_ratnagiri_27032" model="g2p.district">
+        <field name="code">IN27032</field>
+        <field name="name">Ratnagiri</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_sindhudurg_27033" model="g2p.district">
+        <field name="code">IN27033</field>
+        <field name="name">Sindhudurg</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_kolhapur_27034" model="g2p.district">
+        <field name="code">IN27034</field>
+        <field name="name">Kolhapur</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+    <record id="district_sangli_27035" model="g2p.district">
+        <field name="code">IN27035</field>
+        <field name="name">Sangli</field>
+        <field name="region" ref="g2p_farmer.region_maharashtra_27" />
+    </record>
+
+
+
+    <record id="district_srikakulam_28011" model="g2p.district">
+        <field name="code">IN28011</field>
+        <field name="name">Srikakulam</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_vizianagaram_28012" model="g2p.district">
+        <field name="code">IN28012</field>
+        <field name="name">Vizianagaram</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_visakhapatnam_28013" model="g2p.district">
+        <field name="code">IN28013</field>
+        <field name="name">Visakhapatnam</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_east_godavari_28014" model="g2p.district">
+        <field name="code">IN28014</field>
+        <field name="name">East Godavari</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_west_godavari_28015" model="g2p.district">
+        <field name="code">IN28015</field>
+        <field name="name">West Godavari</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_krishna_28016" model="g2p.district">
+        <field name="code">IN28016</field>
+        <field name="name">Krishna</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_guntur_28017" model="g2p.district">
+        <field name="code">IN28017</field>
+        <field name="name">Guntur</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_prakasam_28018" model="g2p.district">
+        <field name="code">IN28018</field>
+        <field name="name">Prakasam</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_sri_potti_sriramulu_nellore_28019" model="g2p.district">
+        <field name="code">IN28019</field>
+        <field name="name">Sri Potti Sriramulu Nellore</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_kadapa_28020" model="g2p.district">
+        <field name="code">IN28020</field>
+        <field name="name">Kadapa</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_kurnool_28021" model="g2p.district">
+        <field name="code">IN28021</field>
+        <field name="name">Kurnool</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_anantapur_28022" model="g2p.district">
+        <field name="code">IN28022</field>
+        <field name="name">Anantapur</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+    <record id="district_chittoor_28023" model="g2p.district">
+        <field name="code">IN28023</field>
+        <field name="name">Chittoor</field>
+        <field name="region" ref="g2p_farmer.region_andhra_pradesh_28" />
+    </record>
+
+
+
+    <record id="district_belgaum_29001" model="g2p.district">
+        <field name="code">IN29001</field>
+        <field name="name">Belgaum</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_begalkot_29002" model="g2p.district">
+        <field name="code">IN29002</field>
+        <field name="name">Begalkot</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_bijapur_29003" model="g2p.district">
+        <field name="code">IN29003</field>
+        <field name="name">Bijapur</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_bidar_29004" model="g2p.district">
+        <field name="code">IN29004</field>
+        <field name="name">Bidar</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_raichur_29005" model="g2p.district">
+        <field name="code">IN29005</field>
+        <field name="name">Raichur</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_koppal_29006" model="g2p.district">
+        <field name="code">IN29006</field>
+        <field name="name">Koppal</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_gadag_29007" model="g2p.district">
+        <field name="code">IN29007</field>
+        <field name="name">Gadag</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_dharwad_29008" model="g2p.district">
+        <field name="code">IN29008</field>
+        <field name="name">Dharwad</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_uttara_kannada_29009" model="g2p.district">
+        <field name="code">IN29009</field>
+        <field name="name">Uttara Kannada</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_haveri_29010" model="g2p.district">
+        <field name="code">IN29010</field>
+        <field name="name">Haveri</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_bellary_29011" model="g2p.district">
+        <field name="code">IN29011</field>
+        <field name="name">Bellary</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_chitradurga_29012" model="g2p.district">
+        <field name="code">IN29012</field>
+        <field name="name">Chitradurga</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_davanagere_29013" model="g2p.district">
+        <field name="code">IN29013</field>
+        <field name="name">Davanagere</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_shimoga_29014" model="g2p.district">
+        <field name="code">IN29014</field>
+        <field name="name">Shimoga</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_udupi_29015" model="g2p.district">
+        <field name="code">IN29015</field>
+        <field name="name">Udupi</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_chikmagalur_29016" model="g2p.district">
+        <field name="code">IN29016</field>
+        <field name="name">Chikmagalur</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_tumkur_29017" model="g2p.district">
+        <field name="code">IN29017</field>
+        <field name="name">Tumkur</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_bangalore_29018" model="g2p.district">
+        <field name="code">IN29018</field>
+        <field name="name">Bangalore</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_mandya_29019" model="g2p.district">
+        <field name="code">IN29019</field>
+        <field name="name">Mandya</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_hassan_29020" model="g2p.district">
+        <field name="code">IN29020</field>
+        <field name="name">Hassan</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_dakshina_kannada_29021" model="g2p.district">
+        <field name="code">IN29021</field>
+        <field name="name">Dakshina Kannada</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_kodagu_29022" model="g2p.district">
+        <field name="code">IN29022</field>
+        <field name="name">Kodagu</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_mysore_29023" model="g2p.district">
+        <field name="code">IN29023</field>
+        <field name="name">Mysore</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_chamarajanagar_29024" model="g2p.district">
+        <field name="code">IN29024</field>
+        <field name="name">Chamarajanagar</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_gulbarga_29025" model="g2p.district">
+        <field name="code">IN29025</field>
+        <field name="name">Gulbarga</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_yadgir_29026" model="g2p.district">
+        <field name="code">IN29026</field>
+        <field name="name">Yadgir</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_kolar_29027" model="g2p.district">
+        <field name="code">IN29027</field>
+        <field name="name">Kolar</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_chikkaballapura_29028" model="g2p.district">
+        <field name="code">IN29028</field>
+        <field name="name">Chikkaballapura</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_bangalore_rural_29029" model="g2p.district">
+        <field name="code">IN29029</field>
+        <field name="name">Bangalore Rural</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+    <record id="district_ramanagara_29030" model="g2p.district">
+        <field name="code">IN29030</field>
+        <field name="name">Ramanagara</field>
+        <field name="region" ref="g2p_farmer.region_karnataka_29" />
+    </record>
+
+
+
+    <record id="district_north_goa_30001" model="g2p.district">
+        <field name="code">IN30001</field>
+        <field name="name">North Goa</field>
+        <field name="region" ref="g2p_farmer.region_goa_30" />
+    </record>
+    <record id="district_south_goa_30002" model="g2p.district">
+        <field name="code">IN30002</field>
+        <field name="name">South Goa</field>
+        <field name="region" ref="g2p_farmer.region_goa_30" />
+    </record>
+
+
+
+    <record id="district_kerala_32001" model="g2p.district">
+        <field name="code">IN32001</field>
+        <field name="name">Kasaragod</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32002" model="g2p.district">
+        <field name="code">IN32002</field>
+        <field name="name">Kannur</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32003" model="g2p.district">
+        <field name="code">IN32003</field>
+        <field name="name">Wayanad</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32004" model="g2p.district">
+        <field name="code">IN32004</field>
+        <field name="name">Kozhikode</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32005" model="g2p.district">
+        <field name="code">IN32005</field>
+        <field name="name">Malappuram</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32006" model="g2p.district">
+        <field name="code">IN32006</field>
+        <field name="name">Palakkad</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32007" model="g2p.district">
+        <field name="code">IN32007</field>
+        <field name="name">Thrissur</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32008" model="g2p.district">
+        <field name="code">IN32008</field>
+        <field name="name">Ernakulam</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32009" model="g2p.district">
+        <field name="code">IN32009</field>
+        <field name="name">Idukki</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32010" model="g2p.district">
+        <field name="code">IN32010</field>
+        <field name="name">Kottayam</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32011" model="g2p.district">
+        <field name="code">IN32011</field>
+        <field name="name">Alappuzha</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32012" model="g2p.district">
+        <field name="code">IN32012</field>
+        <field name="name">Pathanamthitta</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32013" model="g2p.district">
+        <field name="code">IN32013</field>
+        <field name="name">Kollam</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+    <record id="district_kerala_32014" model="g2p.district">
+        <field name="code">IN32014</field>
+        <field name="name">Thiruvananthapuram</field>
+        <field name="region" ref="g2p_farmer.region_kerala_32" />
+    </record>
+
+
+
+    <record id="district_tamil_nadu_33001" model="g2p.district">
+        <field name="code">IN33001</field>
+        <field name="name">Thiruvallur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33002" model="g2p.district">
+        <field name="code">IN33002</field>
+        <field name="name">Chennai</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33003" model="g2p.district">
+        <field name="code">IN33003</field>
+        <field name="name">Kancheepuram</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33004" model="g2p.district">
+        <field name="code">IN33004</field>
+        <field name="name">Vellore</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33005" model="g2p.district">
+        <field name="code">IN33005</field>
+        <field name="name">Tiruvannamalai</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33006" model="g2p.district">
+        <field name="code">IN33006</field>
+        <field name="name">Viluppuram</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33007" model="g2p.district">
+        <field name="code">IN33007</field>
+        <field name="name">Salem</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33008" model="g2p.district">
+        <field name="code">IN33008</field>
+        <field name="name">Namakkal</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33009" model="g2p.district">
+        <field name="code">IN33009</field>
+        <field name="name">Erode</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33010" model="g2p.district">
+        <field name="code">IN33010</field>
+        <field name="name">The Nilgiris</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33011" model="g2p.district">
+        <field name="code">IN33011</field>
+        <field name="name">Dindigul</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33012" model="g2p.district">
+        <field name="code">IN33012</field>
+        <field name="name">Karur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33013" model="g2p.district">
+        <field name="code">IN33013</field>
+        <field name="name">Tiruchirappalli</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33014" model="g2p.district">
+        <field name="code">IN33014</field>
+        <field name="name">Perambalur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33015" model="g2p.district">
+        <field name="code">IN33015</field>
+        <field name="name">Ariyalur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33016" model="g2p.district">
+        <field name="code">IN33016</field>
+        <field name="name">Cuddalore</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33017" model="g2p.district">
+        <field name="code">IN33017</field>
+        <field name="name">Nagapattinam</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33018" model="g2p.district">
+        <field name="code">IN33018</field>
+        <field name="name">Thiruvarur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33019" model="g2p.district">
+        <field name="code">IN33019</field>
+        <field name="name">Thanjavur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33020" model="g2p.district">
+        <field name="code">IN33020</field>
+        <field name="name">Pudukkottai</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33021" model="g2p.district">
+        <field name="code">IN33021</field>
+        <field name="name">Sivaganga</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33022" model="g2p.district">
+        <field name="code">IN33022</field>
+        <field name="name">Madurai</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33023" model="g2p.district">
+        <field name="code">IN33023</field>
+        <field name="name">Theni</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33024" model="g2p.district">
+        <field name="code">IN33024</field>
+        <field name="name">Virudhunagar</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33025" model="g2p.district">
+        <field name="code">IN33025</field>
+        <field name="name">Ramanathapuram</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33026" model="g2p.district">
+        <field name="code">IN33026</field>
+        <field name="name">Thoothukkudi</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33027" model="g2p.district">
+        <field name="code">IN33027</field>
+        <field name="name">Tirunelveli</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33028" model="g2p.district">
+        <field name="code">IN33028</field>
+        <field name="name">Kanniyakumari</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33029" model="g2p.district">
+        <field name="code">IN33029</field>
+        <field name="name">Dharmapuri</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33030" model="g2p.district">
+        <field name="code">IN33030</field>
+        <field name="name">Krishnagiri</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33031" model="g2p.district">
+        <field name="code">IN33031</field>
+        <field name="name">Coimbatore</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+    <record id="district_tamil_nadu_33032" model="g2p.district">
+        <field name="code">IN33032</field>
+        <field name="name">Tiruppur</field>
+        <field name="region" ref="g2p_farmer.region_tamil_nadu_33" />
+    </record>
+
+
+
+    <record id="district_telangana_36001" model="g2p.district">
+        <field name="code">IN36001</field>
+        <field name="name">Adilabad</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36002" model="g2p.district">
+        <field name="code">IN36002</field>
+        <field name="name">Nizamabad</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36003" model="g2p.district">
+        <field name="code">IN36003</field>
+        <field name="name">Karimnagar</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36004" model="g2p.district">
+        <field name="code">IN36004</field>
+        <field name="name">Medak</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36005" model="g2p.district">
+        <field name="code">IN36005</field>
+        <field name="name">Hyderabad</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36006" model="g2p.district">
+        <field name="code">IN36006</field>
+        <field name="name">Rangareddy</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36007" model="g2p.district">
+        <field name="code">IN36007</field>
+        <field name="name">Mahbubnagar</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36008" model="g2p.district">
+        <field name="code">IN36008</field>
+        <field name="name">Nalgonda</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36009" model="g2p.district">
+        <field name="code">IN36009</field>
+        <field name="name">Warangal</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+    <record id="district_telangana_36010" model="g2p.district">
+        <field name="code">IN36010</field>
+        <field name="name">Khammam</field>
+        <field name="region" ref="g2p_farmer.region_telangana_36" />
+    </record>
+</odoo>

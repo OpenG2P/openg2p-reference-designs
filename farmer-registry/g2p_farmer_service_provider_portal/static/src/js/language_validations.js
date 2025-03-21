@@ -17,37 +17,10 @@ function updateLanguage(langElement) {
     const fatherNameOther = document.getElementById("family_name_other");
     const gfNameOther = document.getElementById("gf_name_other");
 
-    const givenNameAmh = document.getElementById("first_name_amh");
-    const fatherNameAmh = document.getElementById("family_name_amh");
-    const gfNameAmh = document.getElementById("gf_name_amh");
-    const amhNamesReq = document.getElementsByClassName("amh_names_required");
-
     const selectedLang = primaryLang.find((lang) => parseInt(lang.value, 10) === parseInt(selectedValue, 10));
 
-    const allowedLanguages = ["Afaan Oromoo", "Afar", "Tigrinya", "Somali"];
-
-    const placeholders = {
-        "Afaan Oromoo": {
-            givenName: "Maqaa Galchi",
-            fatherName: "Maqaa Galchi",
-            gfName: "Maqaa Galchi",
-        },
-        Afar: {
-            givenName: "Migaq Culus",
-            fatherName: "Migaq Culus",
-            gfName: "Migaq Culus",
-        },
-        Tigrinya: {
-            givenName: "ስም ኣእትዉ",
-            fatherName: "ስም ኣእትዉ",
-            gfName: "ስም ኣእትዉ",
-        },
-        Somali: {
-            givenName: "Geli Magaca",
-            fatherName: "Geli Magaca",
-            gfName: "Geli Magaca",
-        },
-    };
+    const allowedLanguages = []
+    const placeholders = {};
 
     if (selectedLang) {
         if (allowedLanguages.includes(selectedLang.label)) {
@@ -61,26 +34,13 @@ function updateLanguage(langElement) {
                 gfName.textContent = `(${selectedLang.label})`;
             }
 
-            givenNameAmh.removeAttribute("required");
-            fatherNameAmh.removeAttribute("required");
-            gfNameAmh.removeAttribute("required");
-            Array.from(amhNamesReq).forEach((element) => {
-                element.textContent = "";
-            });
-            // Set placeholders based on selected language
             givenNameOther.setAttribute("placeholder", placeholders[selectedLang.label]?.givenName);
             fatherNameOther.setAttribute("placeholder", placeholders[selectedLang.label]?.fatherName);
             gfNameOther.setAttribute("placeholder", placeholders[selectedLang.label]?.gfName);
         } else {
-            givenNameAmh.setAttribute("required", "required");
-            fatherNameAmh.setAttribute("required", "required");
-            gfNameAmh.setAttribute("required", "required");
             givenNameOther.removeAttribute("required");
             fatherNameOther.removeAttribute("required");
             gfNameOther.removeAttribute("required");
-            Array.from(amhNamesReq).forEach((element) => {
-                element.textContent = " *";
-            });
         }
     } else {
         return;

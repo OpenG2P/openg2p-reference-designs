@@ -5,7 +5,7 @@
         <field name="model">g2p.crop.category</field>
         <field name="priority">1</field>
         <field name="arch" type="xml">
-               <tree create="true" delete="true" edit="true" editable="bottom">
+            <tree create="true" delete="true" edit="true" editable="bottom">
                 <field name="name" />
                 <field name="code" />
             </tree>
@@ -18,11 +18,11 @@
         <field name="view_mode">tree,form,graph</field>
     </record>
 
-    <menuitem
-        id="g2p_crop_categorymenu"
-        action="g2p_crop_category_tree_action"
-        name="Crop Category"
-        sequence="610"
-        parent="g2p_registry_base.g2p_configuration_menu_root"
+    <menuitem 
+        id="g2p_crop_categorymenu" 
+        action="g2p_crop_category_tree_action" 
+        name="Crop Category" 
+        sequence="610" 
+        parent="g2p_registry_base.g2p_configuration_menu_root" 
     />
 </odoo>

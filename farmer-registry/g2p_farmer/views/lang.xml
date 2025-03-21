@@ -17,11 +17,11 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem
-        id="g2p_lang_menu"
-        action="g2p_lang_action"
-        name="Language"
-        sequence="620"
-        parent="g2p_registry_base.g2p_configuration_menu_root"
+    <menuitem 
+        id="g2p_lang_menu" 
+        action="g2p_lang_action" 
+        name="Language" 
+        sequence="620" 
+        parent="g2p_registry_base.g2p_configuration_menu_root" 
     />
 </odoo>
